@@ -27,17 +27,29 @@
     <div class="myWeek1">
         <h1>Maya Westhorp - Portfolio</h1>
         <h2>Homework 1</h2>
+        <p>Set up home page and embed two charts.</p>
         <h3>Inward FDI</h3>
         <p>My first chart looks at foreign direct investment into the UK.</p>
         <div class="chart" id="Chart1"></div>
 
         <h3>Bank Rate</h3>
         <p>My second chart looks at interest rates in the UK.</p>
-        <div class="chart" id="Chart2"> </div>
+        <div class="chart" id="Chart2"></div>
 
         <h2>Homework 2</h2>
+        <p>Add two charts of IMF lending, with the second chart "improving" the data.</p>
         <h3>IMF lending</h3>
+        <p>This bar chart displays total IMF credit outstanding for all members from 1984 to 2022.</p>
         <div class="chart" id="Chart3"></div>
+
+        <h3>IMF lending as a percentage of GDP</h3>
+        <p>This bar chart displays IMF credit outstanding as a percentage of GDP from 1984 to 2021.
+            To calculate the percentage, I divided the total IMF credit by world GDP.
+        </p>
+        <div class="chart" id="Chart4"></div>
+        <p>The second chart shows that the "riskiest" year for markets was 1984 when IMF credit
+            outstanding as a percentage of GDP was at its peak.
+        </p>
     </div> 
 </body>
 
@@ -46,12 +58,14 @@
     //Define charts:
     var myChart1 = "FDI.json";
     var myChart2 = "BankRate.json";
-    var myChart3 = "FMI_lending.json";
+    var myChart3 = "IMF_lending.json";
+    var myChart4 = "IMF_lending_edited.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
