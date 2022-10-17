@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "description": "Female representation in national parliaments",
+
+    "title": {
+      "text": "Female representation in national parliaments",
+      "subtitle":"Proportion of seats held by women in national parliaments from 1997 to 2021. Source: The World Bank",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+    "data": {
+      "values": [{"Year": 1997.0, "Proportion of seats held by women in national parliaments": 11.69217106}, {"Year": 1998.0, "Proportion of seats held by women in national parliaments": 13.07082223}, {"Year": 1999.0, "Proportion of seats held by women in national parliaments": 13.52010547}, {"Year": 2000.0, "Proportion of seats held by women in national parliaments": 13.90443953}, {"Year": 2001.0, "Proportion of seats held by women in national parliaments": 14.09070087}, {"Year": 2002.0, "Proportion of seats held by women in national parliaments": 15.19744591}, {"Year": 2003.0, "Proportion of seats held by women in national parliaments": 15.17920722}, {"Year": 2004.0, "Proportion of seats held by women in national parliaments": 15.89700057}, {"Year": 2005.0, "Proportion of seats held by women in national parliaments": 16.47454501}, {"Year": 2006.0, "Proportion of seats held by women in national parliaments": 16.96966423}, {"Year": 2007.0, "Proportion of seats held by women in national parliaments": 17.8692023}, {"Year": 2008.0, "Proportion of seats held by women in national parliaments": 18.44275463}, {"Year": 2009.0, "Proportion of seats held by women in national parliaments": 19.02508657}, {"Year": 2010.0, "Proportion of seats held by women in national parliaments": 19.15703782}, {"Year": 2011.0, "Proportion of seats held by women in national parliaments": 19.82776673}, {"Year": 2012.0, "Proportion of seats held by women in national parliaments": 20.7552043}, {"Year": 2013.0, "Proportion of seats held by women in national parliaments": 21.77744744}, {"Year": 2014.0, "Proportion of seats held by women in national parliaments": 22.18829652}, {"Year": 2015.0, "Proportion of seats held by women in national parliaments": 22.84929916}, {"Year": 2016.0, "Proportion of seats held by women in national parliaments": 23.09136742}, {"Year": 2017.0, "Proportion of seats held by women in national parliaments": 23.59033667}, {"Year": 2018.0, "Proportion of seats held by women in national parliaments": 24.09787827}, {"Year": 2019.0, "Proportion of seats held by women in national parliaments": 24.63660369}, {"Year": 2020.0, "Proportion of seats held by women in national parliaments": 25.58043118}, {"Year": 2021.0, "Proportion of seats held by women in national parliaments": 26.12846321}]
+    },
+    "height": 340,
+  "width": 450,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "color": "rgb(250,20,230)"
+  },
+    "encoding": {
+      "x": {"field": "Year","type": "nominal", "title":""},
+      "y": {"field": "Proportion of seats held by women in national parliaments", "type": "quantitative", "title":""}
+    }
+  }
+  

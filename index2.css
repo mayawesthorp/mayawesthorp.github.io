@@ -38,13 +38,14 @@ h1, h2, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: white;
-    width:450px;
+    background-color:white;
+    width:300;
+    height:350;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: grey;
-
+    border-color: white;
+    margin: 10px;
 }
     
 
