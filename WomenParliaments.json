@@ -20,7 +20,7 @@
   "mark": {
     "type": "line",
     "point": false,
-    "color": "rgb(250,20,230)"
+    "color": "rgb(214,140,207)"
   },
     "encoding": {
       "x": {"field": "Year","type": "nominal", "title":""},

@@ -36,13 +36,13 @@
             "type": "line",
             "align": false,
             "interpolate": "step",
-            "color": "rgb(190,150,190)"}},
+            "color": "rgb(149,184,209)"}},
           {"transform": 
             [{"filter": {"selection": "hover"}}], 
                "mark": {
                  "type":"circle",
                  "size":150,
-                 "color":"rgb(230,230,230)"}}
+                 "color":"rgb(170,120,230)"}}
       ]
     },
     
