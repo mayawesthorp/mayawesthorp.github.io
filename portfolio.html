@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maya Westhorp Portfolio</title>
+
+    <link rel="stylesheet" href="index2.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+<body>
+    <div class="myWeek1">
+        <h1>Maya Westhorp - Portfolio</h1>
+        <h2>Homework 1</h2>
+        <p>Set up home page and embed two charts.</p>
+        <h3>Inward FDI</h3>
+        <p>My first chart looks at foreign direct investment into the UK.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>Bank Rate</h3>
+        <p>My second chart looks at interest rates in the UK.</p>
+        <div class="chart" id="Chart2"></div>
+
+        <h2>Homework 2</h2>
+        <p>Add two charts of IMF lending, with the second chart "improving" the data.</p>
+        <h3>IMF lending</h3>
+        <p>This bar chart displays total IMF credit outstanding for all members from 1984 to 2022.</p>
+        <div class="chart" id="Chart3"></div>
+
+        <h3>IMF lending as a percentage of GDP</h3>
+        <p>This bar chart displays IMF credit outstanding as a percentage of GDP from 1984 to 2021.
+            To calculate the percentage, I divided the total IMF credit by world GDP.
+        </p>
+        <div class="chart" id="Chart4"></div>
+        <p>The second chart shows that the "riskiest" year for markets was 1984 when IMF credit
+            outstanding as a percentage of GDP was at its peak.
+        </p>
+
+        <h2>Homework 3</h2>
+        <p>Add a chart using Python.</p>
+        <h3>Female representation in parliaments</h3>
+        <p>This chart shows the proportion of seats in national parliaments that are held by women from 1997 to 2021.</p>
+        <div class="chart" id="Chart5"></div>
+
+        <h2>Homework 4</h2>
+        <p>Add a chart using a scraper in Python</p>
+        <h3>Highest scores by batting position</h3>
+        <p>This chart shows the highest innings totals scored by each batting position.</p>
+        <div class="chart" id="Chart6"></div>
+        <p> I chose this chart because there was no csv link to the data so a scraper was useful to obtain the data.
+            <a href="https://colab.research.google.com/drive/1FH9asKW2wMPNs1gKNBi4bh2aVsKrHKyA#scrollTo=NG5VnIQIpGqx.html">Link to Homework 4 Google Colab</a>
+        </p>
+    </div> 
+</body>
+
+<script>
+    //Define charts:
+    var myChart1 = "FDI.json";
+    var myChart2 = "BankRate.json";
+    var myChart3 = "IMF_lending.json";
+    var myChart4 = "IMF_lending_edited.json";
+    var myChart5 = "WomenParliaments.json";
+    var myChart6 = "Batting_records.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+</script>
+
+</html>
