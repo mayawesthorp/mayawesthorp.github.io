@@ -53,9 +53,23 @@
         <p>This chart shows the highest innings totals scored by each batting position.</p>
         <div class="chart" id="Chart6"></div>
         <p> I chose this chart because there was no csv link to the data so a scraper was useful to obtain the data.
-            <a href="https://colab.research.google.com/drive/1FH9asKW2wMPNs1gKNBi4bh2aVsKrHKyA#scrollTo=NG5VnIQIpGqx.html">Link to Homework 4 Google Colab</a>
+            <a href="https://colab.research.google.com/drive/1FH9asKW2wMPNs1gKNBi4bh2aVsKrHKyA#scrollTo=NG5VnIQIpGqx.html">This is the link to my Google Colab for Homework 4.</a>
         </p>
-    </div> 
+
+        <h2>Homework 5</h2>
+        <p>Use the ONS API to add nine different series as JSON files, using these to create nine charts.</p>
+        <div class="grid-container" style = "display: grid;">
+            <div class="grid-item"><div class = dashchart id = "Chart7" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart8" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart9" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart10" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart11" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart12" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart13" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart14" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart15" style = "display: block;"></div></div>
+        </div> 
+        <p><a href="https://colab.research.google.com/drive/13Agzl5Zl1GwVnjZEbpE3fC9MhwArpImC#scrollTo=Ud2_u-Vz77Lc.html">This is the link to my Google Colab for Homework 5.</a></p>
 </body>
 
 <script>
@@ -66,6 +80,15 @@
     var myChart4 = "IMF_lending_edited.json";
     var myChart5 = "WomenParliaments.json";
     var myChart6 = "Batting_records.json";
+    var myChart7 = "tradebalance.json";
+    var myChart8 = "imports.json";
+    var myChart9 = "exports.json";
+    var myChart10 = "goodsimports.json";
+    var myChart11 = "goodsexports.json";
+    var myChart12 = "servicesimports.json";
+    var myChart13 = "servicesexports.json";
+    var myChart14 = "EUtrade.json";
+    var myChart15 = "nonEUtrade.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -74,6 +97,15 @@
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
 </script>
 
 </html>
