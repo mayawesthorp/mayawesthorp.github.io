@@ -19,7 +19,7 @@
     "width": 380,
     "mark":{
       "type": "bar",
-      "color":"rgb(150,196,145)"},
+      "color":"rgb(171, 217, 201)"},
     "encoding": {
       "x": {"field": "Batting Position", "type": "nominal", "axis": {"labelAngle": 0}, "title":""},
       "y": {"field": "Score", "type": "quantitative", "title":""}
