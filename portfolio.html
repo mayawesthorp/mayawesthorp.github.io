@@ -44,14 +44,16 @@
         <h2>Homework 3</h2>
         <p>Add a chart using Python.</p>
         <h3>Female representation in parliaments</h3>
-        <p>This chart shows the proportion of seats in national parliaments that are held by women from 1997 to 2021.</p>
+        <p>This bar chart shows the proportion of seats in national parliaments that are held by women from 1997 to 2021.</p>
         <div class="chart" id="Chart5"></div>
+        <p>I redisplayed this data using a line chart as it is clearer to see the individual percentages for each country.</p>
+        <div class="chart" id="Chart6"></div>
 
         <h2>Homework 4</h2>
         <p>Add a chart using a scraper in Python</p>
         <h3>Highest scores by batting position</h3>
         <p>This chart shows the highest innings totals scored by each batting position.</p>
-        <div class="chart" id="Chart6"></div>
+        <div class="chart" id="Chart7"></div>
         <p> I chose this chart because there was no csv link to the data so a scraper was useful to obtain the data.
             <a href="https://colab.research.google.com/drive/1FH9asKW2wMPNs1gKNBi4bh2aVsKrHKyA#scrollTo=NG5VnIQIpGqx.html">This is the link to my Google Colab for Homework 4.</a>
         </p>
@@ -59,7 +61,6 @@
         <h2>Homework 5</h2>
         <p>Use the ONS API to add nine different series as JSON files, using these to create nine charts.</p>
         <div class="grid-container" style = "display: grid;">
-            <div class="grid-item"><div class = dashchart id = "Chart7" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart8" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart9" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart10" style = "display: block;"></div></div>
@@ -68,6 +69,7 @@
             <div class="grid-item"><div class = dashchart id = "Chart13" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart14" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart15" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart16" style = "display: block;"></div></div>
         </div> 
         <p><a href="https://colab.research.google.com/drive/13Agzl5Zl1GwVnjZEbpE3fC9MhwArpImC#scrollTo=Ud2_u-Vz77Lc.html">This is the link to my Google Colab for Homework 5.</a></p>
 </body>
@@ -78,17 +80,18 @@
     var myChart2 = "BankRate.json";
     var myChart3 = "IMF_lending.json";
     var myChart4 = "IMF_lending_edited.json";
-    var myChart5 = "WomenParliaments.json";
-    var myChart6 = "Batting_records.json";
-    var myChart7 = "tradebalance.json";
-    var myChart8 = "imports.json";
-    var myChart9 = "exports.json";
-    var myChart10 = "goodsimports.json";
-    var myChart11 = "goodsexports.json";
-    var myChart12 = "servicesimports.json";
-    var myChart13 = "servicesexports.json";
-    var myChart14 = "EUtrade.json";
-    var myChart15 = "nonEUtrade.json";
+    var myChart5 = "WomenParliamentsBar.json";
+    var myChart6 = "WomenParliaments.json";
+    var myChart7 = "Batting_records.json";
+    var myChart8 = "tradebalance.json";
+    var myChart9 = "imports.json";
+    var myChart10 = "exports.json";
+    var myChart11 = "goodsimports.json";
+    var myChart12 = "goodsexports.json";
+    var myChart13 = "servicesimports.json";
+    var myChart14 = "servicesexports.json";
+    var myChart15 = "EUtrade.json";
+    var myChart16 = "nonEUtrade.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -106,6 +109,7 @@
     vegaEmbed('#Chart13', myChart13);
     vegaEmbed('#Chart14', myChart14);
     vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
 </script>
 
 </html>
