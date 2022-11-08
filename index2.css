@@ -51,29 +51,21 @@ h1, h2, h3, p, a{
 
 /*PORTFOLIO*/
 .myWeek1{
-    margin: auto;
-    margin-bottom: 30px;
-    max-width: 800px;
-    background-color: rgb(235, 252, 255);
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 3px;
-    border-color: rgb(235,230,250);
-    }
+    vertical-align: center;
+    text-align: center;
+  }
 
 /*CHARTS*/
 .chart{
-    background-color:white;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 2.5%;
-    text-align: center;
-    max-width: 1000px;
-    border-width: 3px;
-    width: 350px;
-    border-style: solid;
-    border-radius: 8px;
-    border-color: white;
+  width: 300;
+  height: 350;
+  border-width: 5px;
+  background-color: rgb(182, 211, 222);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(182, 211, 222);
+  margin: auto;
+  padding: 10px;
 }
 
 .dashchart{
@@ -82,12 +74,6 @@ h1, h2, h3, p, a{
     margin-bottom: 10%;
     text-align: center;
     max-width: 1000px;
-    background-color:white; 
-    width: 250px;
-    border-width: 3px;
-    border-style: solid; 
-    border-radius: 8px;
-    border-color: white;
 }
 
 .grid-container {
@@ -109,16 +95,16 @@ h1, h2, h3, p, a{
     background-color: #7c93be;
     overflow: hidden;
     justify-items: right;
-    border-bottom:1px solid #EFEEF5;
+    border-bottom:1px solid white;
     margin-right: 0;
     font-family: 'Lora', sans-serif;
     opacity: 100%;
-    color:#EFEEF5;
+    color:white;
   }
 
   .topnav a {
     float: left;
-    color: #EFEEF5;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
