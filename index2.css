@@ -6,23 +6,50 @@
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-
-/* Set the background color for my page: */
-
-/* Book on colour = Joseph Albers - Interaction of Colour */
-
+/*BACKGROUND*/
 body{
     background-color: rgb(182, 211, 222);
+    max-width: 2000px;
+    margin: auto;
  }
 
 
-/* Choose the appearance of the tags, h1, h3 and p: */
+/*h1, h2, h3, p and a: */
 h1, h2, h3, p, a{
     color:rgb(0, 0, 0);
     font-family: 'Lora', sans-serif;
     text-align: center;
 }
-    
+
+/*TITLE BAR*/
+.title-bar{
+    position: relative;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    background-color:#bdb4d9;
+    height: auto;
+    line-height:0;
+    word-wrap: break-word;
+    padding:3px;
+    }
+
+.title-bar h1{ 
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 50px;
+    }
+      
+.title-bar p{ 
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    margin: 50px;
+      }
+
+/*PORTFOLIO*/
 .myWeek1{
     margin: auto;
     margin-bottom: 30px;
@@ -32,10 +59,9 @@ h1, h2, h3, p, a{
     border-style: solid;
     border-radius: 3px;
     border-color: rgb(235,230,250);
-}
+    }
 
-
-/* Set the apperance of the class, chart */
+/*CHARTS*/
 .chart{
     background-color:white;
     width: 100%;
@@ -75,4 +101,36 @@ h1, h2, h3, p, a{
     padding: 5px;
     font-size: 10px;
     margin: 0 auto;
+  }
+
+/*NAVIGATION BAR*/
+.topnav {
+    position:relative;
+    background-color: #7c93be;
+    overflow: hidden;
+    justify-items: right;
+    border-bottom:1px solid #EFEEF5;
+    margin-right: 0;
+    font-family: 'Lora', sans-serif;
+    opacity: 100%;
+    color:#EFEEF5;
+  }
+
+  .topnav a {
+    float: left;
+    color: #EFEEF5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
   }
