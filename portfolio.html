@@ -92,6 +92,13 @@
             <div class="grid-item"><div class = dashchart id = "Chart16" style = "display: block;"></div></div>
         </div> 
         <p><a href="https://colab.research.google.com/drive/13Agzl5Zl1GwVnjZEbpE3fC9MhwArpImC#scrollTo=Ud2_u-Vz77Lc.html">This is the link to my Google Colab for Homework 5.</a></p>
+
+        <h2>Homework 6</h2>
+        <p>Create and embed two maps, the second displaying data using tooltip.</p>
+        <div class="chart" id="Chart17"></div>
+        <div class="chart" id="Chart18"></div>
+        <p>I chose this data as I thought a map would help to show the differences between countries, and the tooltip allows us to easily observe the differences in participation rates between males and females.</p>
+
 </body>
 
 <script>
@@ -112,6 +119,8 @@
     var myChart14 = "servicesexports.json";
     var myChart15 = "EUtrade.json";
     var myChart16 = "nonEUtrade.json";
+    var myChart17 = "worldmap.json";
+    var myChart18 = "worldparticipationrates.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -130,6 +139,8 @@
     vegaEmbed('#Chart14', myChart14);
     vegaEmbed('#Chart15', myChart15);
     vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
 </script>
 
 </html>
