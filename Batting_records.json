@@ -22,7 +22,14 @@
       "color":"rgb(171, 217, 201)"},
     "encoding": {
       "x": {"field": "Batting Position", "type": "nominal", "axis": {"labelAngle": 0}, "title":""},
-      "y": {"field": "Score", "type": "quantitative", "title":""}
+      "y": {"field": "Score", "type": "quantitative", "title":""},
+      "tooltip":[
+        {
+            "field":"Player", 
+            "type": "nominal",
+            "title": "Player"},
+            {"field":"Score"}
+        ]
     }
  
   }
