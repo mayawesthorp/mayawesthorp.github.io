@@ -8,17 +8,17 @@
 
 /*BACKGROUND*/
 body{
-    background-color: rgb(182, 211, 222);
+    background-color: #ABCCD9;
     max-width: 2000px;
     margin: auto;
  }
 
 
-/*h1, h2, h3, p and a: */
+/*TEXT*/
 h1, h2, h3, p, a{
-    color:rgb(0, 0, 0);
-    font-family: 'Lora', sans-serif;
-    text-align: center;
+  color:#0C1F26;
+  font-family: 'Lora', sans-serif;
+  text-align: center;
 }
 
 /*TITLE BAR*/
@@ -28,7 +28,7 @@ h1, h2, h3, p, a{
     left: 0%;
     width:100%;
     margin: 0;
-    background-color:#bdb4d9;
+    background-color:#73A9BF;
     height: auto;
     line-height:0;
     word-wrap: break-word;
@@ -50,7 +50,7 @@ h1, h2, h3, p, a{
       }
 
 /*PORTFOLIO*/
-.myWeek1{
+.portfolio{
     vertical-align: center;
     text-align: center;
   }
@@ -60,10 +60,10 @@ h1, h2, h3, p, a{
   width: 300;
   height: 350;
   border-width: 5px;
-  background-color: rgb(182, 211, 222);
+  background-color: #ABCCD9;
   border-style: solid;
   border-radius: 5px;
-  border-color: rgb(182, 211, 222);
+  border-color: #ABCCD9;
   margin: auto;
   padding: 10px;
 }
@@ -92,7 +92,7 @@ h1, h2, h3, p, a{
 /*NAVIGATION BAR*/
 .topnav {
     position:relative;
-    background-color: #7c93be;
+    background-color: #347B98;
     overflow: hidden;
     justify-items: right;
     border-bottom:1px solid white;
@@ -120,3 +120,5 @@ h1, h2, h3, p, a{
     background-color: #04AA6D;
     color: white;
   }
+
+  
