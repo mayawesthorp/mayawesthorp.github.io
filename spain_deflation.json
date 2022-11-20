@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "Inflation and Consumption in Spain",
+  
+    "title": {
+      "text": "Inflation and Consumption in Spain",
+      "subtitle":"Inflation (annual %) and Final Consumption Expenditure (annual % growth) in Spain from 2006-2016. Source: World Bank.",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "height": 400,
+    "width": 350,
+  
+    "data": {"url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/spain_deflation.csv"},
+  
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"}
+    },
+  
+    "layer": [
+      {
+        "mark": {"opacity": 1, "type": "bar", "color": "rgb(156, 214, 179)", "width":7},
+        "encoding": {
+          "y": {
+            "field": "Inflation (annual %)",
+            "type": "quantitative",
+            "title": ""
+          }
+        }
+      },
+  
+      {
+        "mark": {"stroke": "#36b7b4", "type": "line", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "Final consumption expenditure (annual % growth)",
+            "type": "quantitative",
+            "title": ""
+          }
+        }
+      }
+    ]
+  }
+  

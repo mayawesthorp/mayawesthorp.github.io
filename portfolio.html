@@ -100,6 +100,23 @@
         <h3>Worldwide labour participation rates</h3>
         <p>This map displays total, male and female labour participation rates worldwide.</p>
         <div class="chart" id="Chart18"></div>
+
+        <h2>Homework 7</h2>
+        <p>Produce two charts that support or refute an argument made at the Festival of Economics.</p>
+        <h3>Negative impact of deflation on Japan's economic growth</h3>
+        <div class="chart" id="Chart19"></div>
+        <p>Link to 
+            <a href="https://colab.research.google.com/drive/1oetKsXeri4K9Ur4VWlZ6Psba0PrHcst_?usp=sharing">Google Colab</a>
+             used for this chart.
+        </p>
+        <h3>Positive impact of deflation on Spain's consumer spending</h3>
+        <div class="chart" id="Chart20"></div>
+        <p>In the Prices and Wages talk, it was argued that deflation is always bad. However, I would argue that the impact 
+            of deflation is dependent on what is deflating. Asset prices falling in Japan had highly negative effects 
+        on GDP growth, however, deflation in Spain was partly triggered by lower production costs for firms, therefore resulting
+        in more positive effects.</p>
+
+
 </body>
 
 <script>
@@ -122,6 +139,8 @@
     var myChart16 = "nonEUtrade.json";
     var myChart17 = "worldmap.json";
     var myChart18 = "worldparticipationrates.json";
+    var myChart19 = "japan_deflation.json";
+    var myChart20 = "spain_deflation.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -142,6 +161,8 @@
     vegaEmbed('#Chart16', myChart16);
     vegaEmbed('#Chart17', myChart17);
     vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
 </script>
 
 </html>

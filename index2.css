@@ -15,10 +15,18 @@ body{
 
 
 /*TEXT*/
-h1, h2, h3, p, a{
+h1, h2, h3, a{
   color:#0C1F26;
   font-family: 'Lora', sans-serif;
   text-align: center;
+}
+
+p{  
+  color:#0C1F26;
+  font-family: 'Lora', sans-serif;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /*TITLE BAR*/
