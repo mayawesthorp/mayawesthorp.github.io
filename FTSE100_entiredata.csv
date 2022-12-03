@@ -12,7 +12,7 @@ Avast Plc,Technology,0.333,33.3,9,3,0,0.35,35.40,,
 AVEVA Group Plc,Technology,0.4,40,10,4,0,0.27,27.10,-2.87,50.96
 Aviva Plc,Insurance,0.417,41.7,12,5,1,0.35,34.70,18.4,-8.61
 B&M European Value Retail S.A.,Retail,0.429,42.9,7,3,0,0.43,42.90,-34.4,8.69
-BAE Systems Plc,"Industrial Goods &Services",0.357,35.7,14,5,0,0.31,31.00,47.22,47.64
+BAE Systems Plc,"Industrial Goods & Services",0.357,35.7,14,5,0,0.31,31.00,47.22,47.64
 Barclays Plc,Banks,0.333,33.3,12,4,0,0.26,26.10,-16.55,-18.2
 Barratt Developments Plc,Consumer Products & Services,0.333,33.3,9,3,0,0.26,25.70,-42.89,-33.09
 Berkeley Group Holdings Plc,Consumer Products & Services,0.286,28.6,14,4,0,0.32,31.80,-13.14,0.81
@@ -20,7 +20,7 @@ BHP Group Plc,Basic Resources,0.2,20,10,2,0,0.39,39.40,24.9,90.07
 BP Plc,Energy,0.4,40,10,4,0,0.31,31.10,47.03,0.07
 British American Tobacco Plc,"Food, Beverage & Tobacco",0.333,33.3,10,4,0,0.23,23.10,32.38,-27.68
 BT Group Plc,Telecommunications,0.364,36.4,11,4,0,0.28,28.10,-27.51,-53.78
-Bunzl Plc,"Industrial Goods &Services",0.375,37.5,8,3,0,0.30,29.60,6.28,44.02
+Bunzl Plc,"Industrial Goods & Services",0.375,37.5,8,3,0,0.30,29.60,6.28,44.02
 Burberry Group Plc,Consumer Products & Services,0.545,54.5,11,6,1,0.54,53.70,20.67,25.35
 Coca-Cola HBC AG,"Food, Beverage & Tobacco",0.308,30.8,13,4,0,0.31,31.40,-15.41,-14.94
 Compass Group Plc,Consumer Products & Services,0.308,30.8,13,4,0,0.35,35.00,24.52,24.52
@@ -29,8 +29,8 @@ Croda International Plc,Chemicals,0.444,44.4,9,4,0,0.33,33.30,-29.48,61.99
 DCC Plc,Industrial Goods & Services,0.364,36.4,11,4,0,0.21,20.70,-21.29,-38.11
 Dechra Pharmaceuticals Plc,Health Care,0.375,37.5,8,3,0,0.39,38.70,-44.99,25.93
 Diageo Plc,"Food, Beverage & Tobacco",0.6,60,10,6,1,0.40,40.20,0,49.74
-DS Smith Plc,"Industrial Goods &Services",0.375,37.5,8,3,0,0.33,32.90,-17.67,-39.54
-Electrocomponents Plc,"Industrial Goods &Services",0.444,44.4,9,4,0,0.34,34.20,-22.63,50.08
+DS Smith Plc,"Industrial Goods & Services",0.375,37.5,8,3,0,0.33,32.90,-17.67,-39.54
+Electrocomponents Plc,"Industrial Goods & Services",0.444,44.4,9,4,0,0.34,34.20,-22.63,50.08
 Entain Plc,Travel & Leisure,0.333,33.3,12,4,1,0.33,32.70,-18.45,55.63
 EVRAZ Plc,Basic Resources,0.167,16.7,12,2,0,0.21,20.90,-86.29,
 Experian Plc,Industrial Goods & Services,0.364,36.4,11,4,0,0.26,26.40,-13.9,92.07
@@ -60,7 +60,7 @@ London Stock Exchange Group Plc,Financial Services,0.462,46.2,13,6,1,0.45,44.50,
 M&G Plc,Financial Services,0.5,50,6,3,0,0.35,34.60,0.58,
 Meggitt Plc,Industrial Goods & Services,0.364,36.4,9,4,1,0.18,18.20,,
 Melrose Industries Plc,Industrial Goods & Services,0.455,45.5,11,5,0,0.37,36.70,-12.3,-34.72
-Mondi Plc,"Industrial Goods &Services",0.444,44.4,9,4,0,0.30,30.00,-13.87,-12.63
+Mondi Plc,"Industrial Goods & Services",0.444,44.4,9,4,0,0.30,30.00,-13.87,-12.63
 National Grid Plc,Utilities,0.417,41.7,12,5,0,0.35,35.00,1.79,15.82
 NatWest Group Plc,Banks,0.364,36.4,11,4,2,0.36,35.90,10.86,-13.59
 Next Plc,Retail,0.4,40,10,4,2,0.55,55.00,-27.51,29.86
@@ -72,27 +72,27 @@ Polymetal International Plc,Basic Resources,0.333,33.3,9,3,0,0.23,23.20,-82.36,-
 Prudential Plc,Insurance,0.357,35.7,14,5,0,0.28,28.30,-22.68,-36.62
 Reckitt Benckiser Group Plc,"Personal Care, Drug & Grocery Stores",0.417,41.7,12,5,0,0.26,26.40,-1.6,-6.91
 RELX Plc,Media,0.455,45.5,11,5,0,0.33,32.90,-0.47,35.07
-Rentokil Initial Plc,"Industrial Goods &Services",0.375,37.5,8,3,0,0.32,31.80,-11.51,71.08
+Rentokil Initial Plc,"Industrial Goods & Services",0.375,37.5,8,3,0,0.32,31.80,-11.51,71.08
 Rightmove Plc,Real Estate,0.5,50,8,4,1,0.41,41.30,-26.29,39.42
 Rio Tinto Plc,Basic Resources,0.364,36.4,11,4,0,0.37,36.70,19.32,59.87
 Rolls-Royce Holdings Plc,Industrial Goods & Services,0.385,38.5,13,5,0,0.28,28.20,-31.08,-70.44
 Royal Dutch Shell Plc,Energy,0.5,50,12,6,1,0.29,28.90,48.23,1.04
-Royal Mail Plc,"Industrial Goods &Services",0.4,40,10,4,0,0.30,29.90,,
+Royal Mail Plc,"Industrial Goods & Services",0.4,40,10,4,0,0.30,29.90,,
 Sage Group Plc,Technology,0.3,30,10,3,0,0.39,38.60,3.6,4.79
 Schroders Plc,Financial Services,0.5,50,12,6,0,0.31,31.00,-22.63,-20.99
 SEGRO Plc,Real Estate,0.4,40,10,4,0,0.33,33.30,-43.26,47.09
 Severn Trent Plc,Utilities,0.5,50,10,5,1,0.38,38.00,-5.4,29.44
 Smith & Nephew Plc,Health Care,0.273,27.3,11,3,0,0.33,32.50,-12.99,-17.67
 Smiths Group Plc,Industrial Goods & Services,0.333,33.3,10,4,0,0.21,20.70,8.54,7.59
-Smurfit Kappa Group Plc,"Industrial Goods &Services",0.333,33.3,12,4,0,0.32,31.60,-23.71,26.47
-Spirax-Sarco Engineering Plc,"Industrial Goods &Services",0.4,40,10,4,0,0.33,33.30,-28.25,97.4
+Smurfit Kappa Group Plc,"Industrial Goods & Services",0.333,33.3,12,4,0,0.32,31.60,-23.71,26.47
+Spirax-Sarco Engineering Plc,"Industrial Goods & Services",0.4,40,10,4,0,0.33,33.30,-28.25,97.4
 SSE Plc,Utilities,0.5,50,12,6,0,0.25,24.60,9.92,27.1
 St. James's Place Plc,Financial Services,0.3,30,10,3,0,0.24,23.60,-26.29,-3.83
 Standard Chartered Plc,Banks,0.308,30.8,13,4,0,0.29,29.10,38.45,-19.45
 Taylor Wimpey Plc,Consumer Products & Services,0.5,50,10,5,1,0.26,26.00,-35.54,-46.47
 Tesco Plc,"Personal Care, Drug & Grocery Stores",0.308,30.8,13,4,0,0.29,29.40,-17.78,17.86
 The British Land Company Plc,Real Estate,0.364,36.4,11,4,0,0.39,38.80,-22.68,-38.9
-Unilever Plc,"Personal Care, Drug& Grocery Stores",0.462,46.2,13,6,0,0.32,32.00,8.43,0.37
+Unilever Plc,"Personal Care, Drug & Grocery Stores",0.462,46.2,13,6,0,0.32,32.00,8.43,0.37
 United Utilities Group Plc,Utilities,0.3,30,10,3,1,0.35,34.70,-3.55,27.48
 Vodafone Group Plc,Telecommunications,0.444,44.4,9,4,1,0.30,30.40,-17.59,-59.2
 Whitbread Plc,Travel & Leisure,0.3,30,10,3,1,0.46,45.50,-9.83,-14.99
