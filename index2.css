@@ -1,6 +1,6 @@
-/* Richard Davies, Data Science for Economists */
+/* Maya Westhorp, Data Science 2022*/
 
-/* This is my second CSS file */
+/* This is my CSS file */
 
 
 /* Import a font */
@@ -12,7 +12,6 @@ body{
     max-width: 2000px;
     margin: auto;
  }
-
 
 /*TEXT*/
 h1, h2, h3, a{
@@ -58,10 +57,52 @@ p{
       }
 
 /*PORTFOLIO*/
-.portfolio{
-    vertical-align: center;
-    text-align: center;
+.main2{
+  font-family: 'Lora', sans-serif;
+  font-size: 22px;
+  padding: 10px;
+  vertical-align: center;
+  text-align: center;
+  color:#0C1F26;
   }
+
+.main2 p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 17px auto;
+  max-width: 900px;
+}
+
+/*PROJECT*/
+.main{
+  font-family: 'Lora', sans-serif;
+  font-size: 22px;
+  padding: 10px;
+  vertical-align: center;
+  text-align: center;
+  color:#0C1F26;
+}
+
+.main p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 17px auto;
+  max-width: 900px;
+}
+
+.box2 {
+  box-sizing: border-box;
+  background-color: rgb(232, 179, 230);
+  width: auto;
+  border-radius: 35px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  border-style: solid;
+  border-color: white;
+  font-size: 20px
+}
 
 /*CHARTS*/
 .chart{
@@ -129,4 +170,120 @@ p{
     color: white;
   }
 
+/*PAGE BREAK*/
+.break {
+  display: flex;
+  justify-content:center;
+  text-align:left;
+}
+.break .dot {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.8em;
+  border-radius: 50%;
+  text-align: left;
+}
+.break .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+}
+.break .dot:nth-child(1) {
+  background: plum;
+}
+
+.break .dot:nth-child(2) {
+  background: #b36ebc;
+}
+
+.break .dot:nth-child(3) {
+  background: #703486;
+}
+
+.break .dot:nth-child(4) {
+  background: #5757b4;
+}
+
+.break .dot:nth-child(5) {
+  background: #1a61b5;
+}
+
+/*CONTAINER*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: auto;
+  padding:10px;
+  margin:auto;
+  max-width: 85%;
+}
+
+/*PHONE EXCEPTIONS*/
+@media screen and (max-width: 1000px) {
+  .main p{
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 17px auto;
+    max-width:900px;
+  }
+
+  .topnav {
+    position:relative;
+    background-color: #347B98;
+    overflow: hidden;
+    justify-items: right;
+    border-bottom:1px solid white;
+    margin-right: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    opacity: 100%;
+    color: white
+  }
   
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  
+  .title-bar h1 {
+    position: relative;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    background-color:#73A9BF;
+    height: auto;
+    line-height:0;
+    padding:30px;
+    font-size:60px
+  }
+  
+  p{
+    font-size: 30px;
+  }
+  
+  .main2 p{
+    font-size: 30px;
+  }
+  
+  .title-bar p{
+    font-size: 40px;
+  }
+  
+  h2{
+    font-size: 40px;
+  }
+  
+  .box2 p{
+    font-size:40px;
+  }
+}
