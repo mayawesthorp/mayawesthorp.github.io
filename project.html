@@ -17,23 +17,186 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
 </head>
 
 
 
 <body>
+    <!--Navigation bar-->
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="project.html">Project</a>
         <a href="https://github.com/mayawesthorp">Github</a>
     </div>
-    
-    <section class="title-bar">
-        <h1>Data science</h1>
-        <p>Maya Westhorp | Student ID: 2000679</p>
-    </section>
 
-    <div class="project">
-        <h1>Project</h1>
+    <!--Title bar-->
+    <div>
+        <div class="title-bar">
+            <h1><b>PROJECT</b></h1>
+            <p>Maya Westhorp | Student ID: 2000679</p>
+        </div>
     </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="box2">
+                <h2>Is Firm Success Correlated with Female Board Representation?</h2>
+            </div>
+        </div>
+        
+        <h2><u>Introduction</u></h2>
+        <p>This project will examine female board representation in companies across Europe 
+                and whether there is any correlation between reaching equality in terms of males and females 
+                holding seats on the board of a company and the success of the firm. Throughout the project, 
+                I will observe how gender equality on boards varies between country and sector and I will 
+                look to explore if there is a relationship between this and success of firms, using measurements 
+                including share price growth and market capitalisation.</p>
+        <h3>Female board representation across Europe</h3>
+        <p>This map of Europe visualises the percentage of seats on boards of the largest publicly listed 
+                companies that are held by females.</p>
+        <script>
+            var myChart1 = "chart1_europe.json";
+            vegaEmbed('#Chart1', myChart1);
+        </script>
+            <div class="chart" id="Chart1"></div>
+            <p>Link to 
+                <a href="https://eige.europa.eu/gender-statistics/dgs/indicator/wmidm_bus_bus__wmid_comp_compbm/datatable">
+                    European Institute for Gender Equality</a>
+                 website from which I downloaded the data.
+            </p>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h2>Sectors over time</h2>
+            <p>2003-2022</p>
+            <div class="chart" id="Chart2"></div>
+            <script>
+                var myChart2 = "chart2_sectors.json";
+                vegaEmbed('#Chart2', myChart2);
+            </script>
+        </div>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h3>Is female board representation correlated with market capitalisation?</h3>
+            <p>One way to measure success is by market capitalisation. As each country has a different number 
+                of publicly listed companies, I divided the total market capitalisation by the number of publicly 
+                listed countries and ran a regression against the percentage of seats on boards held by females.</p>
+            <script>
+                var myChart3 = "chart3_marketcap.json"
+                vegaEmbed('#Chart3', myChart3);
+            </script>
+            <div class="chart" id="Chart3"></div>
+            <p>As the chart shows, there is a somewhat positive correlation between market capitalisation and 
+                female board representation.</p>
+                <p>I also ran this regression using Python. Link to 
+                    <a href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">Google Colab</a>
+                     used for this data analysis.
+                </p>
+        </div>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h3>Focusing on the U.K.</h3>
+            <p>The U.K. specialises in the financial services industry, which is typically known for its lack of 
+                female representation. The Financial Times collected data on gender equality from 50 of the UK's 
+                biggest banks, insurers, asset managers and professional services firms.</p>
+            <script>
+                var myChart4 = "chart4_ukfirms.json";
+                vegaEmbed('#Chart4', myChart4);
+            </script>
+            <div class="chart" id="Chart4"></div>
+            <p>The chart highlights that, although most companies are employing a roughly equal number of males and 
+                females, not one company has reached equality in senior positions.</p>
+            <p>Link to <a href="https://colab.research.google.com/drive/1zQJTdPs9QvpzzsCPMTyyUG8faEMlsUQz">
+                Google Colab</a> used to scrape the Financial Times website.</p>
+            <p>Link to <a href="https://ig.ft.com/managements-missing-women-data/">Financial Times article</a>
+                 from which I obtained the data.</p>
+        </div>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h3>Is female board representation correlated with share price growth?</h3>
+            <p>The FTSE Women in Leaders Review annually collects data on gender equality in top 100 firms in the U.K.
+                Using the data from the 2021 review and the five year share price growth for the firms in the top 100,
+                I ran a regression to see whether share price growth and female board representation are correlated.
+            </p>
+            <script>
+                var myChart5 = "chart5_ftse100.json"
+                vegaEmbed('#Chart5', myChart5);
+            </script>
+            <div class="chart" id="Chart5"></div>
+            <p>The results show no correlation between the two variables, although...</p>
+        </div>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h3>What do investors think?</h3>
+            <p>Despite there being no correlation between share price growth and female board representation, a study
+                by Northwestern University found that gender equality does make a difference to the decisions investors 
+                make. They asked 389 investors to bet on whether or not a stock price would increase, telling them that the 
+                company either had gender diversity above or below average.
+            </p>
+            <script>
+                var myChart6 = "chart6_investors_pi.json"
+                vegaEmbed('#Chart6', myChart6);
+            </script>
+            <div class="chart" id="Chart6"></div>
+        </div>
+    </div>
+
+    <div class="break">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</body>
