@@ -2,13 +2,13 @@
 
   "title": {
       "text": "IMF lending outstanding",
-      "subtitle":"Credit outstanding as a percentage of global GDP, SDRs (billions), Source: IMF and World Bank",
+      "subtitle":"Credit outstanding to all members, SDRs (billions), Source: IMF",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"},
   
-  "data":{"url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework2_IMFlending_edited.csv"},
+  "data":{"url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework2_IMFlending.csv"},
   
   "height": 350,
     "width": 380,
@@ -28,7 +28,7 @@
          "labelAngle": 45}},
 
       "y": {
-        "field": "Credit as percentage of GDP",
+        "field": "Totals",
         "type": "quantitative",
         "title": "",
         "axis": {"grid": false}}
