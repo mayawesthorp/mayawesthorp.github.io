@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+        "text": "Chart 2: Female board representation in Europe by sector",
+        "subtitle": "Female share of seats on boards of the largest publicly listed companies categorised by sector, 2003-2022. Source: European Institute for Gender Equality",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+  "height": 350,
+  "width": 500,
+
+    "data": {
+      "values": [
+          {"Sector": "All sectors", "Geographic region": "Average", "Year": "2003", "Percentage": 10.212}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2004", "Percentage": 9.993103448}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2005", "Percentage": 10.86666667}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2006", "Percentage": 11.07}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2007", "Percentage": 11.88387097}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2008", "Percentage": 12.17272727}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2009", "Percentage": 12.65757576}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2010", "Percentage": 13.46060606}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2011", "Percentage": 14.38484848}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2012", "Percentage": 16.19393939}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2013", "Percentage": 17.85454545}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2014", "Percentage": 18.82121212}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2015", "Percentage": 20.64411765}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2016", "Percentage": 21.39411765}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2017", "Percentage": 22.53823529}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2018", "Percentage": 23.15714286}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2019", "Percentage": 24.76}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2020", "Percentage": 25.37428571}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2021", "Percentage": 26.70285714}, {"Sector": "All sectors", "Geographic region": "Average", "Year": "2022", "Percentage": 27.85428571}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2003", "Percentage": 7.868}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2004", "Percentage": 8.407142857}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2005", "Percentage": 7.689655172}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2006", "Percentage": 8.768965517}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2007", "Percentage": 7.903448276}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2008", "Percentage": 8.741935484}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2009", "Percentage": 10.41612903}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2010", "Percentage": 10.775}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2011", "Percentage": 10.85333333}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2012", "Percentage": 12.68965517}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2013", "Percentage": 14.375}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2014", "Percentage": 16.44642857}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2015", "Percentage": 18.35666667}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2016", "Percentage": 19.00333333}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2017", "Percentage": 21.94333333}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2018", "Percentage": 21.46129032}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2019", "Percentage": 21.52666667}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2020", "Percentage": 22.66774194}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2021", "Percentage": 24.62903226}, {"Sector": "Mining, utilities and construction", "Geographic region": "Average", "Year": "2022", "Percentage": 25.9516129}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2003", "Percentage": 9.448}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2004", "Percentage": 9.475862069}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2005", "Percentage": 9.936666667}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2006", "Percentage": 10.13666667}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2007", "Percentage": 11.29032258}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2008", "Percentage": 12.01515152}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2009", "Percentage": 12.1030303}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2010", "Percentage": 14.16969697}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2011", "Percentage": 14.97575758}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2012", "Percentage": 15.55151515}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2013", "Percentage": 17.37575758}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2014", "Percentage": 18.375}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2015", "Percentage": 20.2}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2016", "Percentage": 22.675}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2017", "Percentage": 22.765625}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2018", "Percentage": 22.82121212}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2019", "Percentage": 25.06470588}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2020", "Percentage": 25.67647059}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2021", "Percentage": 25.86176471}, {"Sector": "Manufacturing", "Geographic region": "Average", "Year": "2022", "Percentage": 27.65294118}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2003", "Percentage": 11.78}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2004", "Percentage": 10.89655172}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2005", "Percentage": 11.45}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2006", "Percentage": 11.21333333}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2007", "Percentage": 14.70333333}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2008", "Percentage": 14.584375}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2009", "Percentage": 14.5875}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2010", "Percentage": 15.31818182}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2011", "Percentage": 16.71515152}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2012", "Percentage": 18.3969697}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2013", "Percentage": 19.76363636}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2014", "Percentage": 20.22121212}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2015", "Percentage": 21.47272727}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2016", "Percentage": 21.51515152}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2017", "Percentage": 23.07575758}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2018", "Percentage": 24.59705882}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2019", "Percentage": 25.56764706}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2020", "Percentage": 25.39090909}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2021", "Percentage": 26.55}, {"Sector": "Non-financial services", "Geographic region": "Average", "Year": "2022", "Percentage": 27.71764706}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2003", "Percentage": 10.28}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2004", "Percentage": 10.91034483}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2005", "Percentage": 13.32}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2006", "Percentage": 13.15517241}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2007", "Percentage": 11.58333333}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2008", "Percentage": 13.246875}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2009", "Percentage": 12.309375}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2010", "Percentage": 12.94516129}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2011", "Percentage": 13.87333333}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2012", "Percentage": 16.09333333}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2013", "Percentage": 17.07741935}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2014", "Percentage": 19.18387097}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2015", "Percentage": 23.66774194}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2016", "Percentage": 22.903125}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2017", "Percentage": 24.540625}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2018", "Percentage": 24.63636364}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2019", "Percentage": 26.46969697}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2020", "Percentage": 28.32352941}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2021", "Percentage": 29.94848485}, {"Sector": "Financial services", "Geographic region": "Average", "Year": "2022", "Percentage": 29.75714286}, {"Sector": "Others", "Geographic region": "Average", "Year": "2003", "Percentage": 12.124}, {"Sector": "Others", "Geographic region": "Average", "Year": "2004", "Percentage": 9.407692308}, {"Sector": "Others", "Geographic region": "Average", "Year": "2005", "Percentage": 12.67142857}, {"Sector": "Others", "Geographic region": "Average", "Year": "2006", "Percentage": 10.88148148}, {"Sector": "Others", "Geographic region": "Average", "Year": "2007", "Percentage": 10.18181818}, {"Sector": "Others", "Geographic region": "Average", "Year": "2008", "Percentage": 12.0}, {"Sector": "Others", "Geographic region": "Average", "Year": "2009", "Percentage": 9.984}, {"Sector": "Others", "Geographic region": "Average", "Year": "2010", "Percentage": 12.3}, {"Sector": "Others", "Geographic region": "Average", "Year": "2011", "Percentage": 15.868}, {"Sector": "Others", "Geographic region": "Average", "Year": "2012", "Percentage": 19.31111111}, {"Sector": "Others", "Geographic region": "Average", "Year": "2013", "Percentage": 20.324}, {"Sector": "Others", "Geographic region": "Average", "Year": "2014", "Percentage": 21.38461538}, {"Sector": "Others", "Geographic region": "Average", "Year": "2015", "Percentage": 17.7625}, {"Sector": "Others", "Geographic region": "Average", "Year": "2016", "Percentage": 20.05652174}, {"Sector": "Others", "Geographic region": "Average", "Year": "2017", "Percentage": 23.3}, {"Sector": "Others", "Geographic region": "Average", "Year": "2018", "Percentage": 23.568}, {"Sector": "Others", "Geographic region": "Average", "Year": "2019", "Percentage": 24.18461538}, {"Sector": "Others", "Geographic region": "Average", "Year": "2020", "Percentage": 25.63333333}, {"Sector": "Others", "Geographic region": "Average", "Year": "2021", "Percentage": 29.87692308}, {"Sector": "Others", "Geographic region": "Average", "Year": "2022", "Percentage": 27.368}
+      ]
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "scale": {"domain": ["2003", "2022"]},
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 20}
+    },
+    "y": {
+      "field": "Percentage",
+      "type": "quantitative",
+      "scale": {"domain": [0, 35]},
+      "title": "Percentage of board that are women",
+      "axis": {"grid": false}
+    },
+    "color": {
+      "condition": {
+        "param": "hover",
+        "field": "Sector",
+        "type": "nominal",
+        "legend": {
+          "title": "Sector",
+          "orient": "right"},
+          "scale": {"scheme": "bluepurple"}
+      },
+      "value": "black"
+    },
+      
+    "tooltip": [
+      {"field": "Sector"},
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {"field": "Percentage", "title": "Percent", "format": ".2f"}
+  ],
+  
+  "opacity": {
+    "condition": {
+      "param": "hover", 
+      "value": 1
+      }, 
+    "value": 0.2
+    }
+  },
+  
+  "layer": [
+    {
+      "params": [{
+          "name": "hover",
+          "value": [{"Sector": "All sectors"}],
+          "select": {
+            "type": "point",
+            "fields": ["Sector"],
+            "on": "mouseover"
+            }
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    },
+    {"mark": "line"},
+    {
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year"},
+        "y": {"aggregate": {"argmax": "YEAR"}, "field": "percent"}
+      },
+      "layer": [{
+        "mark": {"type": "circle"}},
+        {
+          "mark": {"type": "text", "align": "left"},
+          "encoding": {"text": {"field": "Sector", "type": "nominal", "title": "Sector"}}
+        }
+      ]
+    }
+  ],
+  "config":{"view":{"stroke":null}}
+}

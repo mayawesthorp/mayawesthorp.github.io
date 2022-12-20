@@ -1,0 +1,156 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    
+    "title": {
+          "text": "Market capitalisation and female board representation by country",
+          "subtitle":["Linear regression of average market capitalisation per company and female board representation.","Source: Wikipedia and European Institute for Gender Equality"],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"
+        },
+        
+     "height": 350,
+        "width": 380,
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/stock_market_cap.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+  
+    "layer": [
+      {
+        "selection": {
+          "picked": {
+            "empty": "none",
+            "bind": {
+              "Country": {
+                "input": "select",
+                "options": [
+                  "No country selected",
+                  "United Kingdom",
+                  "France",
+                  "Germany",
+                  "Switzerland",
+                  "Sweden",
+                  "Netherlands",
+                  "Spain",
+                  "Russia",
+                  "Italy",
+                  "Belgium",
+                  "Norway",
+                  "Turkey",
+                  "Poland",
+                  "Denmark",
+                  "Austria",
+                  "Ireland",
+                  "Portugal",
+                  "Luxembourg",
+                  "Greece",
+                  "Hungary",
+                  "Czech Republic",
+                  "Romania",
+                  "Croatia",
+                  "Finland",
+                  "Bulgaria",
+                  "Slovenia",
+                  "Slovakia",
+                  "Malta",
+                  "Cyprus"
+                ],
+                "name": "Select a country: "
+              }
+            },
+            "type": "single",
+            "fields": ["Country"]
+          },
+          "grid": {
+            "type": "interval",
+            "bind": "scales",
+            "on": "[mousedown, window:mouseup] > window:mousemove!",
+            "translate": "[mousedown, window:mouseup] > window:mousemove!",
+            "zoom": "wheel!",
+            "resolve": "global"
+          }
+        },
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+              "field": "Market cap/number of companies",
+              "type": "quantitative",
+              "scale": {"domain": [0, 11000]}
+            },
+            "y": {
+              "field": "Female share of seats",
+              "type": "quantitative",
+              "scale": {"domain": [0, 50]}
+            },
+  
+          "color": {
+            "value": "rgb(208, 177, 222)",
+            "condition": {
+              "field": "Country",
+              "selection": "picked",
+              "type": "nominal",
+              "legend": null,
+              "scale": {"scheme": "bluepurple"}
+            }
+          },
+          "size": {
+            "value": 90,
+            "condition": {
+              "value": 140,
+              "selection": "picked"
+            }
+          },
+          "opacity": {
+            "value": 0.8,
+            "condition": {
+              "value": 1,
+              "selection": "picked"
+            }
+          },
+          "tooltip":[
+            {
+                "field":"Country", 
+                "type": "nominal",
+                "title": "Country"},
+            {
+              "field": "Market cap/number of companies",
+              "type": "quantitative",
+              "title": ""},
+            {
+              "field": "Female share of seats",
+              "type": "quantitative",
+              "title": "Female share of seats"}
+              ]
+        }
+      },
+      {
+        "transform": [
+          {
+              "regression": "Female share of seats",
+              "on": "Market cap/number of companies",
+              "params": true
+            },
+            {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text",
+            "color": "purple",
+            "x": "width",
+            "align": "right",
+            "y": 10,
+            "size": 13
+          },
+        "encoding": {
+            "text": {"type": "nominal", "field": "R2"}
+          }
+      }
+    ]
+  }

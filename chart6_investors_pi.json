@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+        "text": "Investors' predictions based on company's gender diversity",
+        "subtitle":"Investors' predictions of stock price changes based on whether diversity is above or below average. Source: Northwestern University",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+      
+   "height": 350,
+      "width": 300,
+
+    "data": {
+      "values": [
+        {"Gender Diversity": "Above average", "Prediction": "Rise in stock price", "Percentage": 77},
+        {"Gender Diversity": "Above average", "Prediction": "No change or fall in stock price", "Percentage": 23},
+        {"Gender Diversity": "Below average", "Prediction": "Rise in stock price", "Percentage": 25},
+        {"Gender Diversity": "Below average", "Prediction": "No change or fall in stock price", "Percentage": 75}
+      ]
+    },
+    "mark": "arc",
+    "encoding": {
+      "column": {"field":"Gender Diversity"},
+      "theta": {"field": "Percentage", "type": "quantitative"},
+      "color": {"field": "Prediction", "type": "nominal", "scale":{"scheme":"bluepurple"}},
+      "tooltip": [{"field": "Percentage", "type": "quantitative"}]
+    }
+  }
+  
