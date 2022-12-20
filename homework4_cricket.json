@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "description": "Highest scores by batting position",
+
+    "title": {
+        "text": "Highest scores by batting position",
+        "subtitle":"Higest score in innings at each batting position. Source: Cricket Web",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+
+    "data": {
+      "values": [{"Batting Position": 1, "Score": 364, "Player": "Len Hutton"}, {"Batting Position": 2, "Score": 380, "Player": "Matthew Hayden"}, {"Batting Position": 3, "Score": 400, "Player": "Brian Lara"}, {"Batting Position": 4, "Score": 374, "Player": "Mahela Jayawardene"}, {"Batting Position": 5, "Score": 329, "Player": "Michael Clarke"}, {"Batting Position": 6, "Score": 250, "Player": "Doug Walters"}, {"Batting Position": 7, "Score": 270, "Player": "Don Bradman"}, {"Batting Position": 8, "Score": 257, "Player": "Wasim Akram"}, {"Batting Position": 9, "Score": 173, "Player": "Ian Smith"}, {"Batting Position": 10, "Score": 117, "Player": "Walter Read"}, {"Batting Position": 11, "Score": 98, "Player": "Ashton Agar"}]
+    },
+     "height": 350,
+    "width": 380,
+    "mark":{
+      "type": "bar",
+      "color":"rgb(171, 217, 201)"},
+    "encoding": {
+      "x": {"field": "Batting Position", "type": "nominal", "axis": {"labelAngle": 0}, "title":""},
+      "y": {"field": "Score", "type": "quantitative", "title":""},
+      "tooltip":[
+        {
+            "field":"Player", 
+            "type": "nominal",
+            "title": "Player"},
+            {"field":"Score"}
+        ]
+    }
+ 
+  }
