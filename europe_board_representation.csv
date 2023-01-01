@@ -1,8 +1,8 @@
 ﻿Time,Country Name,Female share of seats
 2021,Albania,
+2021,Andorra
 2021,Austria,34.6
 2021,Belarus,
-2021,Belgium,37.9
 2021,BosniaandHerzegovina,
 2021,Bulgaria,
 2021,Croatia,
@@ -11,6 +11,7 @@
 2021,England,37.8
 2021,Estonia,9.1
 2021,Finland,35.2
+2021,FlemishRegion,37.9
 2021,France,45.3
 2021,Germany,36
 2021,Greece,19.6
@@ -18,6 +19,7 @@
 2021,Iceland,47.1
 2021,Ireland,30.2
 2021,Italy,38.8
+2021,Kosovo,
 2021,Latvia,22.2
 2021,Lithuania,22.3
 2021,Luxembourg,22.4
@@ -40,3 +42,4 @@
 2021,Switzerland,30
 2021,Ukraine,
 2021,Wales,37.8
+2021,WalloonRegion,37.9
