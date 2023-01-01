@@ -3,7 +3,7 @@
   
   "title": {
         "text": "FTSE 100 Company's Individual Share Prices and Female Board Representation",
-        "subtitle":"Linear regression of 5 year growth and female board representation. Source: FTSE Women in Leaders Review & Hargreaves Lansdown",
+        "subtitle":"Linear regression of 5 year growth and female board representation. Source: FTSE Women Leaders Review & Hargreaves Lansdown",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",

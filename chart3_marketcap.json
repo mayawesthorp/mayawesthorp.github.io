@@ -83,12 +83,14 @@
           "x": {
               "field": "Market cap/number of companies",
               "type": "quantitative",
-              "scale": {"domain": [0, 11000]}
+              "scale": {"domain": [0, 11000]},
+              "title": "Average market capitalisation per company"
             },
             "y": {
               "field": "Female share of seats",
               "type": "quantitative",
-              "scale": {"domain": [0, 50]}
+              "scale": {"domain": [0, 50]},
+              "title": "Percentage of board seats held by females"
             },
   
           "color": {
@@ -123,11 +125,11 @@
             {
               "field": "Market cap/number of companies",
               "type": "quantitative",
-              "title": ""},
+              "title": "Average market capitalisation per company"},
             {
               "field": "Female share of seats",
               "type": "quantitative",
-              "title": "Female share of seats"}
+              "title": "Percentage of board seats held by females"}
               ]
         }
       },

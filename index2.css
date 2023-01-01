@@ -24,8 +24,7 @@ p{
   color:#0C1F26;
   font-family: 'Lora', sans-serif;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: auto;
 }
 
 /*TITLE BAR*/
@@ -87,14 +86,14 @@ p{
   font-size: 18px;
   line-height: 1.5;
   margin: 15px auto;
-  max-width: 900px;
+  max-width: 1100px;
 }
 
-.box2 {
+.box1 {
   box-sizing: border-box;
   background-color: rgb(232, 179, 230);
   width: auto;
-  border-radius: 35px;
+  border-radius: 25px;
   padding: 30px;
   text-align: center;
   color: white;
@@ -102,6 +101,20 @@ p{
   border-style: solid;
   border-color: white;
   font-size: 20px
+}
+
+.box2 {
+  box-sizing: border-box;
+  background-color: rgb(236, 214, 235);
+  width: auto;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  border-style: solid;
+  border-color: white;
+  font-size: 15px
 }
 
 /*CHARTS*/
@@ -226,9 +239,9 @@ p{
 }
 
 /*PHONE EXCEPTIONS*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .main p{
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1.5;
     margin: 17px auto;
     max-width:900px;
@@ -243,7 +256,7 @@ p{
     margin-right: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     opacity: 100%;
-    color: white
+    color: white;
   }
   
   .topnav a {
@@ -251,7 +264,7 @@ p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 25px;
   }
   
   .title-bar h1 {
@@ -264,26 +277,29 @@ p{
     height: auto;
     line-height:0;
     padding:30px;
-    font-size:60px
+    font-size:30px
   }
   
   p{
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .main2 p{
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .title-bar p{
-    font-size: 40px;
+    font-size: 20px;
   }
   
   h2{
-    font-size: 40px;
+    font-size: 30px;
   }
-  
+
+  .box1 p{
+    font-size: 20px;
+  }
   .box2 p{
-    font-size:40px;
+    font-size: 20px;
   }
 }

@@ -45,10 +45,14 @@
         "scale": {"scheme": "bluepurple"}
       },
       "tooltip": [
-        {"field": "properties.geounit", "type": "nominal", "title": "Country"},
+        {
+          "field": "properties.geounit", 
+          "type": "nominal", 
+          "title": "Country"},
         {
           "field": "Female share of seats",
-          "type": "quantitative"
+          "type": "quantitative",
+          "format": ".1f"
         }
       ]
     }

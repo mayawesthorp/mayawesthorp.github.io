@@ -3,7 +3,7 @@
     
   "title": {
           "text": "Equality in Financial Services companies",
-          "subtitle":"% of women employed against % of women in senior roles. Source: Financial Times",
+          "subtitle":"Share of women employed against share of women in senior roles. Source: Financial Times",
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
           "anchor": "start",
@@ -18,8 +18,8 @@
     "mark": {"type": "circle"},
   
     "encoding": {
-      "x": {"field": "womentotal2016", "type": "quantitative", "title": "% of Female Employees in 2016"},
-      "y": {"field": "womensr2016", "type": "quantitative", "title": "% of Females in Senior Positions"},
+      "x": {"field": "womentotal2016", "type": "quantitative", "title": "Share of Female Employees in 2016"},
+      "y": {"field": "womensr2016", "type": "quantitative", "title": "Share of Females in Senior Positions"},
       "size": {"field": "Employees", "type": "quantitative","scale": {"rangeMax": 850}},
       "color": {"field": "Sector", "type": "nominal", "scale":{"scheme":"bluepurple"}},
       "tooltip":[
@@ -30,11 +30,13 @@
             {
               "field": "womentotal2016",
               "type": "quantitative",
-              "title": "% of Female Employees in 2016"},
+              "title": "Share of Female Employees",
+              "format": ".2f"},
             {
               "field": "womensr2016",
               "type": "quantitative",
-              "title": "% of Females in Senior Positions"}
+              "title": "Share of Females in Senior Positions",
+              "format": ".2f"}
               ]
     }
   }
