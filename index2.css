@@ -258,3 +258,16 @@ p{
 }
 
 /*PHONE EXCEPTIONS*/
+@media screen and (max-width: 1000px)
+{
+  .title-bar p{ 
+    font-size: 10px;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  .chart{
+    max-width: 900px
+  }
+}
