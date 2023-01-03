@@ -42,7 +42,7 @@
     <div class="main">
         <div class="container">
             <div class="box1">
-                <h2>Is Firm Success Correlated with Female Board Representation?</h2>
+                <h2>Is the Success of Firms Correlated with Gender Equality?</h2>
             </div>
         </div>
     </div>
@@ -51,12 +51,14 @@
         <div class="container">
             <div class="box2">
                 <h2><u>Introduction</u></h2>
-                <p>This project aims to examine female board representation in companies across Europe 
-                and whether there is any correlation between reaching equality in terms of males and females 
-                holding seats on the board of a company and the success of the firm. Throughout the project, 
-                I will observe how gender equality on boards varies between country and sector and I will 
-                look to explore if there is a relationship between this and success of firms, using measurements 
-                including share price growth and market capitalisation.</p>
+                <p>
+                    This project aims to examine gender equality in companies across Europe and whether there is any 
+                    correlation between gender equality and firm's success. Throughout the project, I will measure 
+                    gender equality, looking at both employment and leadership, and make comparisons between countries 
+                    and sectors. I will look to see if there is a relationship specifically between female board
+                    representation and firm success, using measurements such as share price growth and market 
+                    capitalisation.
+                </p>
             </div>
         </div>
     </div>
@@ -64,24 +66,18 @@
     <div>
         <div class="main">
             <h3>Female board representation across Europe</h3>
-            <p>This map of Europe visualises the percentage of seats on boards of the largest publicly listed 
-                companies that are held by females. It is immediately clear that Western European countries tend to
-                have higher female board representation than Eastern European countries, with France having the 
-                highest percentage of females holding board positions, at 45.3%.
-            </p>
-            <p><i>Note: The countries with a percentage of zero are countries for which there was no data on 
-                their female board representation statistics.
-            </i></p>
             <script>
                 var myChart1 = "chart1_europe.json";
                 vegaEmbed('#Chart1', myChart1);
             </script>
             <div class="chart" id="Chart1"></div>
+            <p><i>
+                Note: The countries with a percentage of zero are countries for which there was no data on 
+                their female board representation statistics.
+            </i></p>
         </div>
     </div>
         
-    </div>
-
     <div class="break">
         <div class="dot"></div>
         <div class="dot"></div>
@@ -93,7 +89,6 @@
     <div>
         <div class="main">
             <h3>Sectors over time</h3>
-            <p>2003-2022</p>
             <script>
                 var myChart2 = "chart2_sectors.json";
                 vegaEmbed('#Chart2', myChart2);
@@ -113,11 +108,11 @@
     <div>
         <div class="main">
             <h3>Is female board representation correlated with market capitalisation?</h3>
-            <p>One way to measure success is by market capitalisation. As each country has a different number 
-                of publicly listed companies, to ensure fair comparison, I divided the total market capitalisation 
-                by the number of publicly listed countries and ran a regression against the percentage of seats on 
-                boards held by females. It is evident that, although there is a positive correlation coefficient of 
-                0.18, which is statistically significant at the 95% significance level, this is not a strong correlation.
+            <p>
+                One way to measure 'success' is using market capitalisation. To ensure fair comparison between countries, 
+                I used average market capitalisation per firm, running a regression against the percentage of seats on boards 
+                held by females. There is positive correlation of 0.18, which is statistically significant at the 95% 
+                significance level, however, this is not a strong correlation.
             </p>
             <p><i>I also ran this regression using Python. Link to the
                 <a href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">Google Colab</a>
@@ -141,20 +136,43 @@
 
     <div>
         <div class="main">
-            <h3>Focusing on the U.K.</h3>
-            <p> Using a Financial Times article regarding the underrepresentation of women in senior positions in 
-                the financial services industry in the UK, I created this bubble chart which compares the percentage 
-                of employees that are female with the percentage of senior positions held by females. To gather this 
-                data on gender equality from 50 of the UK's bigget banks, insurers, asset managers and professional 
-                services firms, I scraped the Financial Times website. The chart highlights that, although most companies 
-                are hiring a roughly equal number of males and females, not one company has reached equality in senior 
-                positions.
+            <h3>Focusing on the UK</h3>
+            <p>
+                To narrow down my analysis, I focused on the UK. Using an API loop with data from the ONS, these three 
+                charts compare the employment rates for males and females in the UK. Although there has been a significant 
+                difference in male and female employment rates over the last fifty years, it is clear that this gap is closing.
             </p>
             <script>
-                var myChart4 = "chart4_ukfirms.json";
+                var myChart4 = "chart4_employment.json";
+                var myChart5 = "chart5_femaleemployment.json";
+                var myChart6 = "chart6_maleemployment.json";
+
                 vegaEmbed('#Chart4', myChart4);
+                vegaEmbed('#Chart5', myChart5);
+                vegaEmbed('#Chart6', myChart6);
             </script>
-            <div class="chart" id="Chart4"></div>
+
+            <div class="grid-container" style = "display: grid;">
+                <div class="grid-item"><div class = dashchart id = "Chart4" style = "display: block;"></div></div>
+                <div class="grid-item"><div class = dashchart id = "Chart5" style = "display: block;"></div></div>
+                <div class="grid-item"><div class = dashchart id = "Chart6" style = "display: block;"></div></div>
+            </div> 
+        </div>
+    </div>
+
+    <div>
+        <div class="main">
+            <h3>UK Financial Services Sector</h3>
+            <p>
+                This chart compares the percentage of employees that are female with the percentage of senior positions held 
+                by females, highlighting that, although most companies are hiring a roughly equal number of males and females, 
+                this equality is not being carried through to leadership positions. 
+            </p>
+            <script>
+                var myChart7 = "chart7_ukfirms.json";
+                vegaEmbed('#Chart7', myChart7);
+            </script>
+            <div class="chart" id="Chart7"></div>
         </div>
     </div>
 
@@ -169,47 +187,17 @@
     <div>
         <div class="main">
             <h3>Is female board representation correlated with share price growth?</h3>
-            <p>Annually, the FTSE Women in Leaders Review publishes a report with data on the gender equality statistics
-                in leadership positions of the top 100 firms in the U.K. To obtain the data, I scraped the report, which
-                comes in PDF form, and collected data on the five year share price growth for these firms. I ran a linear
-                regression to estimate whether these two measures are correlated. The results show that there is no detectable 
-                correlation between the two variables, although the next chart will suggest that the perceived wisdom is that
-                higher female board representation does have a positive impact on the likelihood of firm success.
+            <p>
+                Annually, the FTSE Women in Leaders Review publishes a report with data on the gender equality statistics in 
+                leadership positions of the top 100 firms in the UK. Although the report cites the positive impact on 
+                increased gender equality on financial performance, this linear regression shows no detectable correlation 
+                between female board representation and share price growth.
             </p>
             <script>
-                var myChart5 = "chart5_ftse100.json"
-                vegaEmbed('#Chart5', myChart5);
+                var myChart8 = "chart8_ftse100.json"
+                vegaEmbed('#Chart8', myChart8);
             </script>
-            <div class="chart" id="Chart5"></div>
-        </div>
-    </div>
-
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>What do investors think?</h3>
-            <p>Despite there being no correlation between share price growth and female board representation, a study
-                by Northwestern University found that gender equality does make a difference to the decisions that investors 
-                make. They asked 389 investors to bet on whether or not a stock price would increase, telling them that the 
-                company either had gender diversity above or below average. When the investors were told that a company had
-                above average gender diversity figures (meaning that female representation in the company was higher than 
-                average), 77% of investors predicted a rise in the stock price, whereas when the investors were told that the 
-                gender diversity figures were below average, this percentage fell to 25%. This implies that investors not only 
-                consider gender diversity figures when making investment decisions, but also that they believe that higher female 
-                representation increases the likelihood of the firm succeeding.
-            </p>
-            <script>
-                var myChart6 = "chart6_investors_pi.json"
-                vegaEmbed('#Chart6', myChart6);
-            </script>
-            <div class="chart" id="Chart6"></div>
+            <div class="chart" id="Chart8"></div>
         </div>
     </div>
 
@@ -225,7 +213,7 @@
         <div class="main">
             <h3>Challenges with data collection and data cleaning</h3>
             <p>The biggest challenge I faced in data collection was obtaining statistics from the FTSE Women Leaders 
-                Review, which is a PDF document. I condensed the 70 page document into the 4 pages with the data I 
+                Review, which is a PDF document. I condensed the 70-page document into the 4 pages with the data I 
                 needed and imported 'tabula' on Google Colab in order to scrape the PDF, which did not work on my 
                 laptop but fortunately was successful on another device. Once the document was scraped, there was some 
                 manual cleaning necessary which I did in Excel.
@@ -234,7 +222,8 @@
                 I struggled to scrape the correct data that I needed, but eventually was able to use 'pandas' and 
                 'beautifulsoup' successfully. I then used Google Colab to clean the data.
             </p>
-            <p>I used Excel for basic calculations, such as needing to divide the total stock market capitalisation by 
+            <p>Using Google Colab, I created an API loop to extract the employment rates data from the ONS website. I used 
+                Excel for basic calculations, such as needing to divide the total stock market capitalisation by 
                 the number of publicly listed companies in each country to ensure comparison between countries was fair.
             </p>
         </div>
@@ -245,14 +234,21 @@
             <div class="container">
                 <div class="box2">
                     <h2><u>Conclusion</u></h2>
-                    <p>Examining firm success is inherently difficult because there is a broad range of measures and definitions 
-                        that can be used. Looking at success using purely financial measures does not offer the full picture but
-                        does highlight that there is a positive impact of having an equal board in terms of gender. More female 
-                        representation in senior positions means a greater diversity in the decision making of a company as well 
-                        as new ideas, which can only benefit a firm, and is evidently important to investors. Europe as a whole 
-                        is taking steps towards achieving gender parity on boards in firms, but there is undoubtedly still a long 
-                        way to go.
+                    <p>
+                        Although the results suggest that there is little to no correlation between female board representation 
+                        and stock prices or market capitalisation, this does not rule out a relationship between gender diversity 
+                        and the success of firms. Firstly, there is an extensive range of measures and definitions of firm success that 
+                        can be used, and this project only considers two of these measures. Secondly, the increase in gender diversity 
+                        in firms is relatively new and it is likely that it will take time for the impact of this to be reflected in 
+                        the performance of firms. To analyse the relationship further, I would want to observe firms undergoing changes 
+                        in their gender diversity figures, and test the differences in their performance. Furthermore, I would want to 
+                        continue looking at the relationships of market capitalisation and share price growth with female board representation 
+                        over longer periods of time. 
                     </p>
+                    <p>
+                        To conclude, although Europe is certainly taking steps to improve gender diversity, especially in leadership 
+                        positions, there is still a long way to go before we reach equality and can fully judge the impact of this on 
+                        the success of firms, both financially and non-financially.</p>
                 </div>
             </div>
             
@@ -283,19 +279,19 @@
                         href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">
                         Linear Regression</a>
             </p>
-            <p>Chart 4: Financial Services Companies | Original Data Source: <a href="https://ig.ft.com/managements-missing-women-data/#table">
+            <p>Charts 4, 5 and 6: Employment Rates | Original Data Source: <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes">
+                ONS Employment Data</a> | Google Colab used for API loop: <a href="https://colab.research.google.com/drive/1VLNQ9Q59YkjudypTw5Z6MuJulAiMisCA#scrollTo=QbbEAC_bCMRS">
+                    Employment API loop</a>
+            </p>
+            <p>Chart 7: Financial Services Companies | Original Data Source: <a href="https://ig.ft.com/managements-missing-women-data/#table">
                 Financial Times</a> | Google Colab used to scrape data: <a href="https://colab.research.google.com/drive/1zQJTdPs9QvpzzsCPMTyyUG8faEMlsUQz">
                     Financial Times Scraper</a>
             </p>
-            <p>Chart 5: Female Board Representation and Share Price Growth of FTSE 100 Companies | Original Data Sources: <a 
+            <p>Chart 8: Female Board Representation and Share Price Growth of FTSE 100 Companies | Original Data Sources: <a 
                 href="https://ftsewomenleaders.com/wp-content/uploads/2022/03/2021_FTSE-Women-Leaders-Review_Final-Report_WA.pdf">
                 FTSE Women Leaders Review</a> and <a href="https://www.hl.co.uk/shares/stock-market-summary/ftse-100/performance">
                     FTSE 100 Performance</a> | My csv file: <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/FTSE100_entiredata.csv">
                         FTSE 100 Comapnies</a>
-            </p>
-            <p>Chart 6: Investors' opinions | Original Data Source: <a 
-                href="https://insight.kellogg.northwestern.edu/article/women-in-tech-finance-gender-diversity-investors">
-                Kellogg Insight</a>
             </p>
         </div>
     </div>
