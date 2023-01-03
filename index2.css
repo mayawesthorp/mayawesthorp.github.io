@@ -117,6 +117,25 @@ p{
   font-size: 15px
 }
 
+.main button{
+  width: 150px;
+  margin:30px 10px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lora', sans-serif;
+  border:1px solid white;
+  background: rgb(232, 179, 230);
+  border-radius: 25px;
+  padding: 20px;
+  cursor: pointer;
+  transition: .3s;
+  z-index: -1;
+}
+
+.main button:hover{
+  border-radius: 5px;
+}
+
 /*CHARTS*/
 .chart{
   width: 300;
@@ -239,59 +258,3 @@ p{
 }
 
 /*PHONE EXCEPTIONS*/
-@media screen and (max-width: 1000px) {
-  .main p{
-    font-size: 40px;
-    line-height: 1.5;
-    margin: 17px auto;
-    max-width:900px;
-  }
-  .topnav {
-    position:relative;
-    background-color: #347B98;
-    overflow: hidden;
-    justify-items: right;
-    border-bottom:1px solid white;
-    margin-right: 0;
-    font-family: 'Lora', sans-serif;
-    opacity: 100%;
-    color:#EFEEF5
-  }
-  
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 40px;
-  }
-  
-  .title-bar h1{
-  position: relative;
-  top:0%;
-  left: 0%;
-  width:100%;
-  margin: 0;
-  background-color:#73A9BF;
-  height: auto;
-  line-height:0;
-  padding:30px;
-  font-size:70px
-  }
-  
-  p{
-  font-size: 30px}
-  
-  .main2 p{
-  font-size: 30px}
-
-  .title-bar p{
-  font-size: 40px}
-  
-  h2{
-  font-size: 40px}
-  
-  .box2 p{
-  font-size:30px}
-
-}
