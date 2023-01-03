@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+    "text": "UK Female Employment Rate (%)",
+    "subtitle": ["Female employment rate (aged 16-64, seasonally adjusted): %.", "Source: ONS"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+
+    "width":180,
+    "height":200,
+
+    "data": {
+        "name":"myData",
+        "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/data_ONS-LF25.json",
+        "format": {
+          "type":"json",
+          "property": "years"
+        }},
+  
+
+    "mark":{
+      "type": "line",
+      "color":"#e758bad8",
+      "strokeWidth":2,
+      "opacity":1
+    },
+
+    "transform": [
+      {"filter": "datum.year>minYear"},
+      {"filter": "datum.year<maxYear"}
+    ],
+
+    "params": [    
+      {"name":"minYear", "value":1971,
+         "bind":{
+           "input": "range",
+           "min": 1971, 
+           "max": 2022, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+
+      {"name":"maxYear", "value":2022,
+         "bind":{
+           "input": "range",
+           "min": 1971, 
+           "max": 2022, 
+           "step": 1,
+           "name": "End year:"}
+      }
+    ],
+
+
+    "encoding": {
+      
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title":null
+        },
+  
+      "y": {
+        "field": "value",                
+        "type": "quantitative",
+        "title":null,
+        "scale":{
+            "domain":[50,100]},
+        "axis": {"format":".2s"}
+        },
+
+      "tooltip": [
+        {"field":"value",
+        "type": "quantitative",
+        "title": "Female Employment Rate (%)"}
+      ]
+  }
+}
