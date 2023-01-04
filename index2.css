@@ -136,6 +136,7 @@ p{
   border-radius: 5px;
 }
 
+
 /*CHARTS*/
 .chart{
   width: 300;
@@ -261,7 +262,7 @@ p{
 @media screen and (max-width: 1000px)
 {
   .title-bar p{ 
-    font-size: 10px;
+    font-size: 30px;
     font-family: 'Lora', sans-serif;
     font-weight: bold;
     margin: auto;
