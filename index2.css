@@ -259,14 +259,34 @@ p{
 }
 
 /*PHONE EXCEPTIONS*/
-@media screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px)
 {
-  .title-bar p{ 
+  .title-bar{
+    position: relative;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    background-color:#73A9BF;
+    height: auto;
+    line-height:0;
+    word-wrap: break-word;
+    padding:3px;
+    }
+    
+    .title-bar h1{ 
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    }
+    
+    .title-bar p{ 
     font-size: 30px;
     font-family: 'Lora', sans-serif;
     font-weight: bold;
     margin: auto;
-  }
+      }
 
   .chart{
     max-width: 900px
