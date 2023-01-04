@@ -60,13 +60,32 @@ p{
 
 @media screen and (max-width: 800px)
 {
-  .title-bar h1{
-    font-size: 30px;
-  }
+  .title-bar{
+    position: relative;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    background-color:#73A9BF;
+    height: auto;
+    line-height:0;
+    word-wrap: break-word;
+    padding:3px;
+    }
 
-  .title-bar p{
+.title-bar h1{ 
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center
+    }
+      
+.title-bar p{ 
     font-size: 20px;
-  }
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    text-align: center
+    }
 }
 
 /*PORTFOLIO*/
