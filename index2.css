@@ -11,6 +11,7 @@ body{
     background-color: #ABCCD9;
     max-width: 2000px;
     margin: auto;
+    box-sizing:border-box;
  }
 
 /*TEXT*/
@@ -46,6 +47,7 @@ p{
     font-weight: bold;
     text-transform: uppercase;
     margin: 50px;
+    text-align: center
     }
       
 .title-bar p{ 
@@ -53,7 +55,19 @@ p{
     font-family: 'Lora', sans-serif;
     font-weight: bold;
     margin: 50px;
-      }
+    text-align: center
+    }
+
+@media screen and (max-width: 1500px)
+{
+  .title-bar h1{
+    font-size: 20px;
+  }
+
+  .title-bar p{
+    font-size: 10px;
+  }
+}
 
 /*PORTFOLIO*/
 .main2{
@@ -136,6 +150,16 @@ p{
   border-radius: 5px;
 }
 
+/*CLICKED LINKS*/
+a:link, a:visited {
+  color: #347B98;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: #347B98;
+}
 
 /*CHARTS*/
 .chart{
@@ -256,6 +280,94 @@ p{
   padding:10px;
   margin:auto;
   max-width: 85%;
+}
+
+.container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #ABCCD9;
+}
+
+.background1 {
+  background: linear-gradient(132deg, #b9cdd5, #ABCCD9, #9ccadc);
+  background-size: 400% 400%;
+  animation: Gradient 20s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 15s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #ABCCD9 ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/*FOOTER*/
+footer {
+  height: 100px
 }
 
 /*PHONE EXCEPTIONS*/
