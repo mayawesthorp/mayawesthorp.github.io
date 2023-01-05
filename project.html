@@ -23,276 +23,299 @@
 
 <body>
 
-    <!--Navigation bar-->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="project.html">Project</a>
-        <a href="https://github.com/mayawesthorp">Github</a>
-    </div>
-
-    <!--Title bar-->
-    <div>
-        <div class="title-bar">
-            <h1><b>PROJECT</b></h1>
-            <p>Maya Westhorp | Student ID: 2000679</p>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="container">
-            <div class="box1">
-                <h2>Is the Success of Firms Correlated with Gender Equality?</h2>
+    <!--<div class="container-fluid">
+        <div class="background1">-->
+            
+            <!--Navigation bar-->
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="project.html">Project</a>
+                <a href="https://github.com/mayawesthorp">Github</a>
             </div>
-        </div>
-    </div>
-    
-    <div class="main">
-        <div class="container">
-            <div class="box2">
-                <h2><u>Introduction</u></h2>
-                <p>
-                    This project aims to examine gender equality in companies across Europe and whether there is any 
-                    correlation between gender equality and firm's success. Throughout the project, I will measure 
-                    gender equality, looking at both employment and leadership, and make comparisons between countries 
-                    and sectors. I will look to see if there is a relationship specifically between female board
-                    representation and firm success, using measurements such as share price growth and market 
-                    capitalisation.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Female board representation across Europe</h3>
-            <script>
-                var myChart1 = "chart1_europe.json";
-                vegaEmbed('#Chart1', myChart1);
-            </script>
-            <div class="chart" id="Chart1"></div>
-            <p><i>
-                Note: The countries with a percentage of zero are countries for which there was no data on 
-                their female board representation statistics.
-            </i></p>
-        </div>
-    </div>
-        
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Sectors over time</h3>
-            <script>
-                var myChart2 = "chart2_sectors.json";
-                vegaEmbed('#Chart2', myChart2);
-            </script>
-            <div class="chart" id="Chart2"></div>
-        </div>
-    </div>
-
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Is female board representation correlated with market capitalisation?</h3>
-            <p>
-                One way to measure 'success' is using market capitalisation. To ensure fair comparison between countries, 
-                I used average market capitalisation per firm, running a regression against the percentage of seats on boards 
-                held by females. There is positive correlation of 0.18, which is statistically significant at the 95% 
-                significance level, however, this is not a strong correlation.
-            </p>
-            <p><i>I also ran this regression using Python. Link to the
-                <a href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">Google Colab</a>
-                 used for this data analysis.
-            </i></p>
-            <script>
-                var myChart3 = "chart3_marketcap.json"
-                vegaEmbed('#Chart3', myChart3);
-            </script>
-            <div class="chart" id="Chart3"></div>
-        </div>
-    </div>
-
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Focusing on the UK</h3>
-            <p>
-                To narrow down my analysis, I focused on the UK. Using an API loop with data from the ONS, these three 
-                charts compare the employment rates for males and females in the UK. Although there has been a significant 
-                difference in male and female employment rates over the last fifty years, it is clear that this gap is closing.
-            </p>
-            <script>
-                var myChart4 = "chart4_employment.json";
-                var myChart5 = "chart5_femaleemployment.json";
-                var myChart6 = "chart6_maleemployment.json";
-
-                vegaEmbed('#Chart4', myChart4);
-                vegaEmbed('#Chart5', myChart5);
-                vegaEmbed('#Chart6', myChart6);
-            </script>
-
-            <div class="grid-container" style = "display: grid;">
-                <div class="grid-item"><div class = dashchart id = "Chart4" style = "display: block;"></div></div>
-                <div class="grid-item"><div class = dashchart id = "Chart5" style = "display: block;"></div></div>
-                <div class="grid-item"><div class = dashchart id = "Chart6" style = "display: block;"></div></div>
-            </div> 
-        </div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>UK Financial Services Sector</h3>
-            <p>
-                This chart compares the percentage of employees that are female with the percentage of senior positions held 
-                by females, highlighting that, although most companies are hiring a roughly equal number of males and females, 
-                this equality is not being carried through to leadership positions. 
-            </p>
-            <script>
-                var myChart7 = "chart7_ukfirms.json";
-                vegaEmbed('#Chart7', myChart7);
-            </script>
-            <div class="chart" id="Chart7"></div>
-        </div>
-    </div>
-
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Is female board representation correlated with share price growth?</h3>
-            <p>
-                Annually, the FTSE Women in Leaders Review publishes a report with data on the gender equality statistics in 
-                leadership positions of the top 100 firms in the UK. Although the report cites the positive impact on 
-                increased gender equality on financial performance, this linear regression shows no detectable correlation 
-                between female board representation and share price growth.
-            </p>
-            <script>
-                var myChart8 = "chart8_ftse100.json"
-                vegaEmbed('#Chart8', myChart8);
-            </script>
-            <div class="chart" id="Chart8"></div>
-        </div>
-    </div>
-
-    <div class="break">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-
-    <div>
-        <div class="main">
-            <h3>Challenges with data collection and data cleaning</h3>
-            <p>The biggest challenge I faced in data collection was obtaining statistics from the FTSE Women Leaders 
-                Review, which is a PDF document. I condensed the 70-page document into the 4 pages with the data I 
-                needed and imported 'tabula' on Google Colab in order to scrape the PDF, which did not work on my 
-                laptop but fortunately was successful on another device. Once the document was scraped, there was some 
-                manual cleaning necessary which I did in Excel.
-            </p>
-            <p>Furthermore, I faced challenges when scraping the Financial Times data for the fourth chart. Initially, 
-                I struggled to scrape the correct data that I needed, but eventually was able to use 'pandas' and 
-                'beautifulsoup' successfully. I then used Google Colab to clean the data.
-            </p>
-            <p>Using Google Colab, I created an API loop to extract the employment rates data from the ONS website. I used 
-                Excel for basic calculations, such as needing to divide the total stock market capitalisation by 
-                the number of publicly listed companies in each country to ensure comparison between countries was fair.
-            </p>
-        </div>
-    </div>
-
-    <div>
-        <div class="main">
-            <div class="container">
-                <div class="box2">
-                    <h2><u>Conclusion</u></h2>
-                    <p>
-                        Although the results suggest that there is little to no correlation between female board representation 
-                        and stock prices or market capitalisation, this does not rule out a relationship between gender diversity 
-                        and the success of firms. Firstly, there is an extensive range of measures and definitions of firm success that 
-                        can be used, and this project only considers two of these measures. Secondly, the increase in gender diversity 
-                        in firms is relatively new and it is likely that it will take time for the impact of this to be reflected in 
-                        the performance of firms. To analyse the relationship further, I would want to observe firms undergoing changes 
-                        in their gender diversity figures, and test the differences in their performance. Furthermore, I would want to 
-                        continue looking at the relationships of market capitalisation and share price growth with female board representation 
-                        over longer periods of time. 
-                    </p>
-                    <p>
-                        To conclude, although Europe is certainly taking steps to improve gender diversity, especially in leadership 
-                        positions, there is still a long way to go before we reach equality and can fully judge the impact of this on 
-                        the success of firms, both financially and non-financially.</p>
+            
+            <!--Title bar-->
+            <div>
+                <div class="title-bar">
+                    <h1><b>PROJECT</b></h1>
+                    <p>Maya Westhorp | Student ID: 2000679</p>
                 </div>
             </div>
             
-        </div>
-    </div>
+            <div class="main">
+                <div class="container">
+                    <div class="box1">
+                        <h2>Is the Success of Firms Correlated with Gender Equality?</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="container">
+                    <div class="box2">
+                        <h2><u>Introduction</u></h2>
+                        <p>
+                            This project aims to examine gender equality in companies across Europe and whether there is any 
+                            correlation between gender equality and firm's success. Throughout the project, I will measure 
+                            gender equality, looking at both employment and leadership, and make comparisons between countries 
+                            and sectors. I will look to see if there is a relationship specifically between female board
+                            representation and firm success, using measurements such as share price growth and market 
+                            capitalisation.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <div>
-        <div class="main">
-            <h3>References</h3>
-            <p>Chart 1: Female Board Representaion in Europe | Original Data Source: 
-                <a href="https://eige.europa.eu/gender-statistics/dgs/indicator/wmidm_bus_bus__wmid_comp_compbm/datatable">
-                European Institute for Gender Equality</a> | My csv file: <a 
-                href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/europe_board_representation.csv">
-                Europe Board Representation</a>
-            </p>
-            <p>Chart 2: Female Board Representation by Sector | Original Data Source: 
-                <a href="https://eige.europa.eu/gender-statistics/dgs/indicator/wmidm_bus_bus__wmid_comp_compbm/datatable">
-                European Institute for Gender Equality</a> | My csv file: <a 
-                href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/sector_board_representation.csv">
-                Board Representaiton by Sector</a>
-            </p>
-            <p>Chart 3: Market Cap and Board Representation Regression | Market Cap Data Source:
-                <a href="https://en.wikipedia.org/wiki/List_of_countries_by_stock_market_capitalization">List of Countries by 
-                    Stock Market Capitalisation</a> | Google Colab to scrape data: <a 
-                    href="https://colab.research.google.com/drive/1182CDF-oSSq7b3m0T6mGTBgG7mCzrCWU">Stock Market Cap Scraper</a>
-                     | My csv file: <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/stock_market_cap.csv">
-                        Market Capitalisation</a> | Google Colab used for linear regression: <a 
-                        href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">
-                        Linear Regression</a>
-            </p>
-            <p>Charts 4, 5 and 6: Employment Rates | Original Data Source: <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes">
-                ONS Employment Data</a> | Google Colab used for API loop: <a href="https://colab.research.google.com/drive/1VLNQ9Q59YkjudypTw5Z6MuJulAiMisCA#scrollTo=QbbEAC_bCMRS">
-                    Employment API loop</a>
-            </p>
-            <p>Chart 7: Financial Services Companies | Original Data Source: <a href="https://ig.ft.com/managements-missing-women-data/#table">
-                Financial Times</a> | Google Colab used to scrape data: <a href="https://colab.research.google.com/drive/1zQJTdPs9QvpzzsCPMTyyUG8faEMlsUQz">
-                    Financial Times Scraper</a>
-            </p>
-            <p>Chart 8: Female Board Representation and Share Price Growth of FTSE 100 Companies | Original Data Sources: <a 
-                href="https://ftsewomenleaders.com/wp-content/uploads/2022/03/2021_FTSE-Women-Leaders-Review_Final-Report_WA.pdf">
-                FTSE Women Leaders Review</a> and <a href="https://www.hl.co.uk/shares/stock-market-summary/ftse-100/performance">
-                    FTSE 100 Performance</a> | My csv file: <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/FTSE100_entiredata.csv">
-                        FTSE 100 Comapnies</a>
-            </p>
+            <div>
+                <div class="main">
+                    <h3>Female board representation across Europe</h3>
+                    <script>
+                        var myChart1 = "chart1_europe.json";
+                        vegaEmbed('#Chart1', myChart1);
+                    </script>
+                    <div class="chart" id="Chart1"></div>
+                    <p><i>
+                        Note: The countries with a percentage of zero are countries for which there was no data on 
+                        their female board representation statistics.
+                    </i></p>
+                </div>
+            </div>
+        
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>Sectors over time</h3>
+                    <img src="chart2_sectors.png" alt="PitcherTypes"
+                    width= "650"
+                    height= "400" />
+                    <p><i>Note: This chart is displayed as an image as I had much difficulty displaying the chart, and was unable to identify the problem.
+                         The code to the interactive chart (which can be viewed on Vega Lite) is linked 
+                         <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/chart2_sectors.json">here.</a> 
+                    </i></p>
+                    <script>
+                        var myChart2 = "chart2_sectors.json"
+                        vegaEmbed('#Chart2', myChart2);
+                    </script>
+                    <div class="chart" id="Chart2" style="display: block;"></div>
+                </div>
+            </div>
+
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>Is female board representation correlated with market capitalisation?</h3>
+                    <p>
+                        One way to measure 'success' is using market capitalisation. To ensure fair comparison between countries, 
+                        I used average market capitalisation per firm, running a regression against the percentage of seats on boards 
+                        held by females. There is positive correlation of 0.18, which is statistically significant at the 95% 
+                        significance level, however, this is not a strong correlation.
+                    </p>
+                    <p><i>I also ran this regression using Python. Link to the
+                        <a href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">Google Colab</a>
+                        used for this data analysis.
+                    </i></p>
+                    <script>
+                        var myChart3 = "chart3_marketcap.json"
+                        vegaEmbed('#Chart3', myChart3);
+                    </script>
+                    <div class="chart" id="Chart3"></div>
+                </div>
+            </div>
+
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>Focusing on the UK</h3>
+                    <p>
+                        To narrow down my analysis, I focused on the UK. Using an API loop with data from the ONS, these three 
+                        charts compare the employment rates for males and females in the UK. Although there has been a significant 
+                        difference in male and female employment rates over the last fifty years, it is clear that this gap is closing.
+                    </p>
+                    <script>
+                        var myChart4 = "chart4_employment.json";
+                        var myChart5 = "chart5_femaleemployment.json";
+                        var myChart6 = "chart6_maleemployment.json";
+
+                        vegaEmbed('#Chart4', myChart4);
+                        vegaEmbed('#Chart5', myChart5);
+                        vegaEmbed('#Chart6', myChart6);
+                    </script>
+
+                    <div class="grid-container" style = "display: grid;">
+                        <div class="grid-item"><div class = dashchart id = "Chart4" style = "display: block;"></div></div>
+                        <div class="grid-item"><div class = dashchart id = "Chart5" style = "display: block;"></div></div>
+                        <div class="grid-item"><div class = dashchart id = "Chart6" style = "display: block;"></div></div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>UK Financial Services Sector</h3>
+                    <p>
+                        This chart compares the percentage of employees in a firm that are female with the percentage of senior positions held 
+                        by females, highlighting that, although most companies are hiring a roughly equal number of males and females, 
+                        this equality is not being carried through to leadership positions. 
+                    </p>
+                    <script>
+                        var myChart7 = "chart7_ukfirms.json";
+                        vegaEmbed('#Chart7', myChart7);
+                    </script>
+                    <div class="chart" id="Chart7"></div>
+                </div>
+            </div>
+
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>Is female board representation correlated with share price growth?</h3>
+                    <p>
+                        Annually, the FTSE Women in Leaders Review publishes a report with data on the gender equality statistics in 
+                        leadership positions of the top 100 firms in the UK. Although the report cites the positive impact on 
+                        increased gender equality on financial performance, this linear regression shows no detectable correlation 
+                        between female board representation and share price growth.
+                    </p>
+                    <script>
+                        var myChart8 = "chart8_ftse100.json"
+                        vegaEmbed('#Chart8', myChart8);
+                    </script>
+                    <div class="chart" id="Chart8"></div>
+                </div>
+            </div>
+
+            <div class="break">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>Challenges with data collection and data cleaning</h3>
+                    <p>The biggest challenge I faced in data collection was obtaining statistics from the FTSE Women Leaders 
+                        Review, which is a PDF document. I condensed the 70-page document into the 4 pages with the data I 
+                        needed and imported 'tabula' on Google Colab in order to scrape the PDF, which did not work on my 
+                        laptop but fortunately was successful on another device. Once the document was scraped, there was some 
+                        manual cleaning necessary which I did in Excel.
+                    </p>
+                    <p>Furthermore, I faced challenges when scraping the Financial Times data for the fourth chart. Initially, 
+                        I struggled to scrape the correct data that I needed, but eventually was able to use 'pandas' and 
+                        'beautifulsoup' successfully. I then used Google Colab to clean the data.
+                    </p>
+                    <p>Using Google Colab, I created an API loop to extract the employment rates data from the ONS website. I used 
+                        Excel for basic calculations, such as needing to divide the total stock market capitalisation by 
+                        the number of publicly listed companies in each country to ensure comparison between countries was fair.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <div class="container">
+                        <div class="box2">
+                            <h2><u>Conclusion</u></h2>
+                            <p>
+                                Although the results suggest that there is little to no correlation between female board representation 
+                                and stock prices or market capitalisation, this does not rule out a relationship between gender diversity 
+                                and the success of firms. Firstly, there is an extensive range of measures and definitions of firm success that 
+                                can be used, and this project only considers two of these measures. Secondly, the increase in gender diversity 
+                                in firms is relatively new and it is likely that it will take time for the impact of this to be reflected in 
+                                the performance of firms. To analyse the relationship further, I would want to observe firms undergoing changes 
+                                in their gender diversity figures, and test the differences in their performance. Furthermore, I would want to 
+                                continue looking at the relationships of market capitalisation and share price growth with female board representation 
+                                over longer periods of time. 
+                            </p>
+                            <p>
+                                To conclude, although Europe is certainly taking steps to improve gender diversity, especially in leadership 
+                                positions, there is still a long way to go before we reach equality and can fully judge the impact of this on 
+                                the success of firms, both financially and non-financially.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div>
+                <div class="main">
+                    <h3>References</h3>
+                    <p>Chart 1: Female Board Representaion in Europe | Original Data Source: 
+                        <a href="https://eige.europa.eu/gender-statistics/dgs/indicator/wmidm_bus_bus__wmid_comp_compbm/datatable">
+                        European Institute for Gender Equality</a> | My csv file: <a 
+                        href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/europe_board_representation.csv">
+                        Europe Board Representation</a>
+                    </p>
+                    <p>Chart 2: Female Board Representation by Sector | Original Data Source: 
+                        <a href="https://eige.europa.eu/gender-statistics/dgs/indicator/wmidm_bus_bus__wmid_comp_compbm/datatable">
+                        European Institute for Gender Equality</a> | My csv file: <a 
+                        href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/sector_board_representation.csv">
+                        Board Representaiton by Sector</a>
+                    </p>
+                    <p>Chart 3: Market Cap and Board Representation Regression | Market Cap Data Source:
+                        <a href="https://en.wikipedia.org/wiki/List_of_countries_by_stock_market_capitalization">List of Countries by 
+                            Stock Market Capitalisation</a> | Google Colab to scrape data: <a 
+                            href="https://colab.research.google.com/drive/1182CDF-oSSq7b3m0T6mGTBgG7mCzrCWU">Stock Market Cap Scraper</a>
+                            | My csv file: <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/stock_market_cap.csv">
+                                Market Capitalisation</a> | Google Colab used for linear regression: <a 
+                                href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">
+                                Linear Regression</a>
+                    </p>
+                    <p>Charts 4, 5 and 6: Employment Rates | Original Data Source: <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes">
+                        ONS Employment Data</a> | Google Colab used for API loop: <a href="https://colab.research.google.com/drive/1VLNQ9Q59YkjudypTw5Z6MuJulAiMisCA#scrollTo=QbbEAC_bCMRS">
+                            Employment API loop</a>
+                    </p>
+                    <p>Chart 7: Financial Services Companies | Original Data Source: <a href="https://ig.ft.com/managements-missing-women-data/#table">
+                        Financial Times</a> | Google Colab used to scrape data: <a href="https://colab.research.google.com/drive/1zQJTdPs9QvpzzsCPMTyyUG8faEMlsUQz">
+                            Financial Times Scraper</a>
+                    </p>
+                    <p>Chart 8: Female Board Representation and Share Price Growth of FTSE 100 Companies | Original Data Sources: <a 
+                        href="https://ftsewomenleaders.com/wp-content/uploads/2022/03/2021_FTSE-Women-Leaders-Review_Final-Report_WA.pdf">
+                        FTSE Women Leaders Review</a> and <a href="https://www.hl.co.uk/shares/stock-market-summary/ftse-100/performance">
+                            FTSE 100 Performance</a> | My csv file: <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/FTSE100_entiredata.csv">
+                                FTSE 100 Comapnies</a>
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
+    </div>     
+
 </body>
+
+<footer></footer>

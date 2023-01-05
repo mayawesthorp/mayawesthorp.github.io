@@ -362,7 +362,7 @@ footer {
 /*PHONE EXCEPTIONS*/
 @media screen and (max-width: 1000px) {
   .main p{
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1.5;
     margin: 17px auto;
     max-width:900px;
@@ -385,15 +385,19 @@ footer {
   }*/
 
   p{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .main2 p{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .title-bar p{
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .title-bar h1{
+    font-size: 25px;
   }
 
   h2{
