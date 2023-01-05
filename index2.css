@@ -393,7 +393,7 @@ footer {
   }
 
   .title-bar p{
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .title-bar h1{
@@ -404,8 +404,12 @@ footer {
     font-size: 40px;
   }
 
+  .box1 h2{
+    font-size: 28px;
+  }
+
   .box2 p{
-    font-size:30px;
+    font-size: 20px;
   }
 
   .grid-container {
@@ -419,6 +423,11 @@ footer {
     padding: 5px;
     font-size: 10px;
     margin: 0 auto;
+  }
+
+  .chart{
+    width: 180;
+    height: 200;
   }
 
 }
