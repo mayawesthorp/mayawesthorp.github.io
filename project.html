@@ -69,10 +69,6 @@
             <div>
                 <div class="main">
                     <h3>Female board representation across Europe</h3>
-                    <script>
-                        var myChart1 = "chart1_europe.json";
-                        vegaEmbed('#Chart1', myChart1);
-                    </script>
                     <div class="chart" id="Chart1"></div>
                     <p><i>
                         Note: The countries with a percentage of zero are countries for which there was no data on 
@@ -99,11 +95,7 @@
                          The code to the interactive chart (which can be viewed on Vega Lite) is linked 
                          <a href="https://github.com/mayawesthorp/mayawesthorp.github.io/blob/main/chart2_sectors.json">here.</a> 
                     </i></p>
-                    <script>
-                        var myChart2 = "chart2_sectors.json"
-                        vegaEmbed('#Chart2', myChart2);
-                    </script>
-                    <div class="chart" id="Chart2" style="display: block;"></div>
+                    <div class="chart" id="Chart2"></div>
                 </div>
             </div>
 
@@ -128,10 +120,6 @@
                         <a href="https://colab.research.google.com/drive/1-vbF1LtBlLIjvlYhSIzi_k73e9ZbBcf9#scrollTo=mLrZi_jbT2eU">Google Colab</a>
                         used for this data analysis.
                     </i></p>
-                    <script>
-                        var myChart3 = "chart3_marketcap.json"
-                        vegaEmbed('#Chart3', myChart3);
-                    </script>
                     <div class="chart" id="Chart3"></div>
                 </div>
             </div>
@@ -152,16 +140,6 @@
                         charts compare the employment rates for males and females in the UK. Although there has been a significant 
                         difference in male and female employment rates over the last fifty years, it is clear that this gap is closing.
                     </p>
-                    <script>
-                        var myChart4 = "chart4_employment.json";
-                        var myChart5 = "chart5_femaleemployment.json";
-                        var myChart6 = "chart6_maleemployment.json";
-
-                        vegaEmbed('#Chart4', myChart4);
-                        vegaEmbed('#Chart5', myChart5);
-                        vegaEmbed('#Chart6', myChart6);
-                    </script>
-
                     <div class="grid-container" style = "display: grid;">
                         <div class="grid-item"><div class = dashchart id = "Chart4" style = "display: block;"></div></div>
                         <div class="grid-item"><div class = dashchart id = "Chart5" style = "display: block;"></div></div>
@@ -186,10 +164,6 @@
                         by females, highlighting that, although most companies are hiring a roughly equal number of males and females, 
                         this equality is not being carried through to leadership positions. 
                     </p>
-                    <script>
-                        var myChart7 = "chart7_ukfirms.json";
-                        vegaEmbed('#Chart7', myChart7);
-                    </script>
                     <div class="chart" id="Chart7"></div>
                 </div>
             </div>
@@ -211,10 +185,6 @@
                         increased gender equality on financial performance, this linear regression shows no detectable correlation 
                         between female board representation and share price growth.
                     </p>
-                    <script>
-                        var myChart8 = "chart8_ftse100.json"
-                        vegaEmbed('#Chart8', myChart8);
-                    </script>
                     <div class="chart" id="Chart8"></div>
                 </div>
             </div>
@@ -319,3 +289,37 @@
 </body>
 
 <footer></footer>
+
+<script>
+    let width = screen.width
+        if (width > 1000){
+            myChart1 = "chart1_europe.json";
+            myChart2 = "chart2_sectors.json";
+            myChart3 = "chart3_marketcap.json";
+            myChart7 = "chart7_ukfirms.json";
+            myChart8 = "chart8_ftse100.json";
+        } else{
+            myChart1 = "chart1_europe_narrow.json";
+            myChart2 = "chart2_sectors.json";
+            myChart3 = "chart3_marketcap_narrow.json";
+            myChart7 = "chart7_ukfirms_narrow.json";
+            myChart8 = "chart8_ftse_narrow.json";
+   
+        }
+    
+        var myChart4 = "chart4_employment.json";
+        var myChart5 = "chart5_femaleemployment.json";
+        var myChart6 = "chart6_maleemployment.json";
+        
+
+        vegaEmbed('#Chart1', myChart1);
+        vegaEmbed('#Chart2', myChart2);
+        vegaEmbed('#Chart3', myChart3);
+        vegaEmbed('#Chart4', myChart4);
+        vegaEmbed('#Chart5', myChart5);
+        vegaEmbed('#Chart6', myChart6);
+        vegaEmbed("#Chart7", myChart7);
+        vegaEmbed('#Chart8', myChart8);
+</script>
+
+</html>

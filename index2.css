@@ -408,4 +408,17 @@ footer {
     font-size:30px;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid-item {
+    padding: 5px;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+
 }
