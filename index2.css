@@ -368,26 +368,6 @@ footer {
     max-width:900px;
   }
 
-  .topnav {
-    position:relative;
-    background-color: #ABCCD9;
-    overflow: hidden;
-    justify-items: right;
-    border-bottom:1px solid white;
-    margin-right: 0;
-    font-family: 'Lora', sans-serif;
-    opacity: 100%;
-    color:white
-  }
-  
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 40px;
-  }
-
   /*.main button{
       width: 300px;
       margin:100px auto ;
@@ -403,20 +383,6 @@ footer {
       z-index: -1;
       display:grid;
   }*/
-
-  .title-bar h1{
-    position: relative;
-    top:0%;
-    left: 0%;
-    width:100%;
-    margin: 0;
-    background-color:#73A9BF;
-    height: auto;
-    line-height:0;
-    word-wrap: break-word;
-    padding:30px;
-    font-size:70px
-    }
 
   p{
     font-size: 30px;
