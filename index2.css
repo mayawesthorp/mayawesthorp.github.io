@@ -268,7 +268,7 @@ a:link:active, a:visited:active {
   width: auto;
   padding:10px;
   margin:auto;
-  max-width: 85%;
+  max-width: 100%;
 }
 
 .container-fluid{
@@ -429,7 +429,7 @@ footer {
   .title-bar p{
     font-size: 40px;
   }
-  
+
   h2{
     font-size: 40px;
   }
