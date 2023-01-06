@@ -401,10 +401,12 @@ footer {
 
   .title-bar p{
     font-size: 12px;
+    margin: 50px;
   }
   
   .title-bar h1{
     font-size: 25px;
+    margin: 50px;
   }
 
   h2{
@@ -423,7 +425,7 @@ footer {
     grid-template-columns: 10% 10%;
     margin: auto
   }
-  
+
   .grid-item > div {
     margin: auto;
     padding: 5px
