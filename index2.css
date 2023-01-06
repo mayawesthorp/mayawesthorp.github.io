@@ -375,21 +375,21 @@ footer {
     box-sizing:border-box;
  }
 
-  /*.main button{
+  .main button{
       width: 300px;
       margin:100px auto ;
-      color: #273349;
+      color: white;
       font-size: 50px;
-      border:1px solid #EFEEF5;
+      border:1px solid white;
       font-weight: 500;
-      background: #EFEEF5;
+      background: rgb(232, 179, 230);
       border-radius: 20px;
       padding: 50px;
       cursor:pointer;
       transition: .3s;
       z-index: -1;
       display:grid;
-  }*/
+  }
 
   p{
     font-size: 20px;
