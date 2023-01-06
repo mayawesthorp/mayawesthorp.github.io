@@ -393,7 +393,7 @@ footer {
   }
 
   .title-bar p{
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .title-bar h1{
@@ -423,6 +423,5 @@ footer {
 
   .chart{
     width: 180;
-    height: 200;
   }
 }
