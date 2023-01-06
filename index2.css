@@ -368,6 +368,13 @@ footer {
     max-width:900px;
   }
 
+  body{
+    background-color: #ABCCD9;
+    max-width: 100%;
+    margin: auto;
+    box-sizing:border-box;
+ }
+
   /*.main button{
       width: 300px;
       margin:100px auto ;
