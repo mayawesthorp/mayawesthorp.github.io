@@ -422,6 +422,7 @@ footer {
   }
 
   .chart{
-    width: 180;
+    width: 80%;
+    height:80%;
   }
 }
