@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-          "text": "Chart 1: Female board representation of the largest publicly listed companies in Europe",
+          "text": "Chart 1: Female Board Representation of the Largest Publicly Listed Companies in Europe",
           "subtitle": "Female share of seats on boards of the largest publicly listed companies. Source: European Institute for Gender Equality",
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,

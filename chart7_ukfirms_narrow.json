@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
   "title": {
-          "text": "Equality in Financial Services companies",
+          "text": "Equality in Financial Services Companies",
           "subtitle":["Share of women employed against share of women in senior roles.", "Source: Financial Times"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,

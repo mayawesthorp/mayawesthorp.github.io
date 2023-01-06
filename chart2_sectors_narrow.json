@@ -2,8 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
     "title": {
-          "text": "Chart 2: Female board representation in Europe by sector",
-          "subtitle": "Female share of seats on boards of the largest publicly listed companies categorised by sector, 2003-2022. Source: European Institute for Gender Equality",
+          "text": "Chart 2: Female Board Representation by Sector",
+          "subtitle": ["Female share of board seats categorised by sector, 2003-2022.",
+           "Source: European Institute for Gender Equality"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
           "anchor": "start",
