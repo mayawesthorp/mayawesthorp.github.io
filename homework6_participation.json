@@ -53,7 +53,11 @@
              "color":{
                 "field": "Labour force participation rate",
                 "type": "quantitative",
-                "scale":{"scheme":"lighttealblue"}
+                "scale":{"scheme":"lighttealblue"},
+                "legend":{
+                    "title":"Labour Force Participation Rate",
+                    "orient": "bottom-left",
+                    "direction": "horizontal"}
           }
           }
   }

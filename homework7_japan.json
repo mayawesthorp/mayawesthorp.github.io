@@ -16,7 +16,7 @@
   
     "mark": "line",
     "height": 400,
-      "width": 380,
+      "width": 300,
   
     "encoding": {
       "column": {"field": "Series Name", "title": ""},
@@ -24,8 +24,14 @@
       "field": "Percentage", "type": "quantitative", "title": ""},
       "x": {"field": "Year", "type": "temporal"},
       "color": {
-        "field": "Country Name", "type": "nominal",
-        "scale": {"range": ["rgb(123, 214, 224)", "rgb(173, 145, 219)"]}, "title":"Country"
+        "field": "Country Name",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {"range": ["rgb(123, 214, 224)", "rgb(173, 145, 219)"]},
+        "legend":{
+          "title":"Labour Force Participation Rate",
+          "orient": "bottom",
+          "direction": "horizontal"}
       }
     }
   }
