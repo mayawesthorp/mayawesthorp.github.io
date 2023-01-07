@@ -362,12 +362,7 @@ footer {
   .box3 {
     width: 250px;
   }
-
-  .container {
-    width: 100%;
-    max-width: 1000px;
-  }
-
+  
   .grid-container {
     display: grid;
     grid-template-rows: auto;
