@@ -3,7 +3,7 @@
     
     "title": {
           "text": "Market Capitalisation and Female Board Representation",
-          "subtitle":["Linear regression of market capitalisation per company and female board representation.",
+          "subtitle":["Linear regression of market capitalisation and female board representation.",
                       "Source: Wikipedia and European Institute for Gender Equality"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,

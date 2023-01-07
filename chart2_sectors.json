@@ -3,7 +3,7 @@
 
   "title": {
         "text": "Chart 2: Female Board Representation in Europe by Sector",
-        "subtitle": "Female share of seats on boards of the largest publicly listed companies categorised by sector, 2003-2022. Source: European Institute for Gender Equality",
+        "subtitle": ["Female share of seats on boards of the largest publicly listed companies categorised by sector, 2003-2022.", "Source: European Institute for Gender Equality"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -38,7 +38,7 @@
         "type": "nominal",
         "legend": {
           "title": "Sector",
-          "orient": "right"},
+          "orient": "bottom"},
           "scale": {"scheme": "bluepurple"}
       },
       "value": "black"
