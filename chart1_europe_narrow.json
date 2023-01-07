@@ -3,7 +3,7 @@
     
     "title": {
           "text": ["Chart 1: Female Board Representation in Europe"],
-          "subtitle": ["Female share of seats on boards of the largest publicly listed companies.",
+          "subtitle": ["Female seat share on boards of the largest publicly listed companies.",
           "Source: European Institute for Gender Equality"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
@@ -44,7 +44,8 @@
       "color": {
         "field": "Female share of seats",
         "type": "quantitative",
-        "scale": {"scheme": "bluepurple"}
+        "scale": {"scheme": "bluepurple"},
+        "legend": {"orient": "bottom"}
       },
       "tooltip": [
         {

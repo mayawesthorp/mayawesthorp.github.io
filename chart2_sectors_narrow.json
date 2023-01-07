@@ -41,7 +41,8 @@
           "type": "nominal",
           "legend": {
             "title": "Sector",
-            "orient": "right"},
+            "orient": "bottom",
+            "direction":"vertical"},
             "scale": {"scheme": "bluepurple"}
         },
         "value": "black"

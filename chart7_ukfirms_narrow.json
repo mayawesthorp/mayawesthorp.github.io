@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
   "title": {
-          "text": "Equality in Financial Services Companies",
+          "text": "Chart 7: Equality in Financial Services Companies",
           "subtitle":["Share of women employed against share of women in senior roles.", "Source: Financial Times"],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
@@ -27,7 +27,7 @@
         "legend":{
           "title":"Number of Employees",
           "orient": "bottom",
-          "direction": "horizontal"
+          "direction": "vertical"
         }},
       "color": {
         "field": "Sector",
@@ -36,7 +36,7 @@
         "legend":{
           "title":"Sector",
           "orient": "bottom",
-          "direction": "horizontal"}},
+          "direction": "vertical"}},
 
       "tooltip":[
             {
