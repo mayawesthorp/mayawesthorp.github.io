@@ -9,6 +9,9 @@
           "subtitleFontSize":10,
           "anchor": "start",
           "color": "black"},
+
+    "height": 350,
+    "width": "container",
   
   
     "data": {

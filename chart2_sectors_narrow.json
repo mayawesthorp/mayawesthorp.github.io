@@ -10,8 +10,8 @@
           "anchor": "start",
           "color": "black"},
   
-    "height": 200,
-    "width": 160,
+      "height": 350,
+      "width": "container",
   
       "data": {
         "values": [

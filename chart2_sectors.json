@@ -10,7 +10,7 @@
         "color": "black"},
 
   "height": 350,
-  "width": 500,
+  "width": "container",
 
     "data": {
       "values": [

@@ -11,7 +11,7 @@
   },
 
 
-    "width":180,
+    "width":"container",
     "height":200,
 
     "data": {
