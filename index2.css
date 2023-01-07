@@ -124,6 +124,20 @@ p{
   font-size: 15px
 }
 
+.box3 {
+  box-sizing: border-box;
+  background-color: #ABCCD9;
+  width: auto;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  border-style: solid;
+  border-color: white;
+  font-size: 15px
+}
+
 .main button{
   width: 150px;
   margin:30px 10px;
@@ -211,6 +225,7 @@ a:link:active, a:visited:active {
     font-family: 'Lora', sans-serif;
     opacity: 100%;
     color:white;
+    width: 100%;
   }
 
   .topnav a {
