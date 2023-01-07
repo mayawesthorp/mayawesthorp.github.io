@@ -362,6 +362,15 @@ footer {
     width: 200px;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+  }
+
   div.rest {
     left: -275px;
     margin-left: 30px;
