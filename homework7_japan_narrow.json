@@ -4,7 +4,7 @@
     "description": "Inflation and GDP growth in Japan vs G7 average (excluding Japan)",
   
     "title": {
-      "text": "Comparing GDP Growth and Inflation in Japan and other G7 countries during and after the 'Lost Decade'",
+      "text": ["Comparing GDP Growth and Inflation in Japan", "and other G7 countries during and after the 'Lost Decade'"],
       "subtitle":"GDP growth and inflation (%) from 1990-2021. Source: World Bank.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,

@@ -27,7 +27,7 @@
         "legend":{
           "title":"Number of Employees",
           "orient": "bottom",
-          "direction": "horizontal"
+          "direction": "vertical"
         }},
       "color": {
         "field": "Sector",
@@ -36,7 +36,7 @@
         "legend":{
           "title":"Sector",
           "orient": "bottom",
-          "direction": "horizontal"}},
+          "direction": "vertical"}},
 
       "tooltip":[
             {

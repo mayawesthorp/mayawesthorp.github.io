@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text":"Cluster on FTSE 100 Companies",
+      "subtitle": ["Component 1 (x), Component 2 (y).", "Source: FTSE Women Leaders Review"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "config": {"background": "white", "view": {"stroke": "transparent"}},
+    "data": {
+      "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework9_cluster.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {
+      "type": "circle",
+      "size": 100,
+      "color": "#caa9df", 
+      "opacity": 0.7
+      },
+  
+    "height": 400,
+    "width": "container",
+  
+    "encoding": {
+      "x": {
+        "field": "Component 1",
+        "type": "quantitative",
+        "scale": {"domain": [-4, 5]},
+        "axis": {"grid": false},
+        "title": null
+      },
+      "y": {
+        "field": "Component 2",
+        "type": "quantitative",
+        "scale": {"domain": [-3, 4]},
+        "axis": {"grid": false},
+        "title":null
+      },
+          "color": {
+        "field": "Sector",
+        "type": "ordinal",
+        "scale": {"scheme": "set2"},
+        "legend": {
+          "orient": "bottom",
+          "direction": "vertical"},
+        "title": "Position"
+      },
+      "tooltip": [
+        {"field": "Company", "type": "nominal", "title": "Company"},
+        {"field": "Sector", "type": "nominal", "title": "Sector"}
+      ]
+    }
+  }
