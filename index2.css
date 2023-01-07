@@ -367,6 +367,10 @@ footer {
     width: 50%;
   }
 
+  .container {
+    max-width: 1000px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-rows: auto;
