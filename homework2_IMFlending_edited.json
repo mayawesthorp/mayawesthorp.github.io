@@ -11,7 +11,7 @@
   "data":{"url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework2_IMFlending_edited.csv"},
   
   "height": 350,
-    "width": 380,
+    "width": "container",
 
   "mark": {
     "type": "bar",
