@@ -15,7 +15,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv"},
     "height": 350,
-    "width": 380,
+    "width": "container",
   "mark": {
     "type": "line",
     "point": false,

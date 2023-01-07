@@ -11,7 +11,7 @@
 },
 
 "height": 350,
-"width": 380,
+"width": "container",
 
   "data": {
       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/n2sa/dataset/pb/data",
