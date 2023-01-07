@@ -127,13 +127,12 @@ p{
 .box3 {
   box-sizing: border-box;
   background-color: #ABCCD9;
-  width: auto;
   max-width: 800px;
   border-radius: 25px;
   padding: 20px;
   text-align: center;
   color: white;
-  margin: 20px;
+  margin: auto;
   border-style: solid;
   border-color: white;
   font-size: 15px
