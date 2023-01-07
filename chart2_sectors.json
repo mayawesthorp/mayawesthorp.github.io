@@ -38,7 +38,7 @@
         "type": "nominal",
         "legend": {
           "title": "Sector",
-          "orient": "bottom"},
+          "orient": "right"},
           "scale": {"scheme": "bluepurple"}
       },
       "value": "black"

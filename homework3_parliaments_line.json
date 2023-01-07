@@ -1,6 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Proportion of seats held by women in national parliaments.",
+  "title": {
+    "text": "Proportion of Seats Held by Women in National Parliaments",
+    "subtitle":"Statistics for India, Iran, New Zealand and World, 1997-2021. Source: World Bank",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
   "data": { "values":[
     {
         "Country name": "India",
