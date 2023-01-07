@@ -252,6 +252,14 @@
 
 <script>
     //Define charts:
+    let width = screen.width
+    if (width > 1000){
+        myChart19 = "homework7_japan.json";
+    } 
+    else{
+        myChart19 = "homework7_japan_narrow.json";
+    }
+
     var myChart1 = "homework1_FDI.json";
     var myChart2 = "homework1_bankrate.json";
     var myChart3 = "homework2_IMFlending.json";
@@ -270,7 +278,6 @@
     var myChart16 = "homework5_nonEUtrade.json";
     var myChart17 = "homework6_world.json";
     var myChart18 = "homework6_participation.json";
-    var myChart19 = "homework7_japan.json";
     var myChart20 = "homework7_spain.json";
     var myChart21 = "homework8_ftse100.json";
     var myChart22 = "homework8_ukfirms.json";

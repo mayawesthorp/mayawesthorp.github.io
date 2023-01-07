@@ -9,6 +9,10 @@
     "anchor": "start",
     "color": "black"
   },
+
+  "height": 350,
+  "width": "container",
+
   "data": { "values":[
     {
         "Country name": "India",
@@ -512,8 +516,7 @@
     }
 ]},
   "mark": "line",
-  "height": 350,
-    "width": 380,
+  
   "encoding": {
     "x": {"field": "Year", "type": "temporal","axis":{"grid": false}},
     "y": {"field": "Seats", "type": "quantitative", "scale": {"domain": [0, 50]},"axis":{"grid": false}, "title":""},

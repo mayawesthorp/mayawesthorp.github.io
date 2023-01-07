@@ -127,12 +127,12 @@ p{
 .box3 {
   box-sizing: border-box;
   background-color: #ABCCD9;
-  max-width: 800px;
+  width: auto;
   border-radius: 25px;
   padding: 20px;
   text-align: center;
   color: white;
-  margin: auto;
+  margin: 20px;
   border-style: solid;
   border-color: white;
   font-size: 15px
@@ -364,17 +364,15 @@ footer {
   .box2 p{
     font-size: 20px;
   }
-
-  .box3 {
-    width: 250px;
-  }
   
   .grid-container {
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     place-items: center;
     padding: 5px;
-    width: 100%;
+    width: 80%;
+    max-width: 400px;
     margin: auto;
   }
 
