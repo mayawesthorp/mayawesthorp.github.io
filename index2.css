@@ -193,6 +193,8 @@ a:link:active, a:visited:active {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    place-items: center;
     padding: 5px;
     width: 100%;
     margin: auto;
@@ -354,6 +356,10 @@ footer {
 
   .box2 p{
     font-size: 20px;
+  }
+
+  .box3 {
+    width: 200px;
   }
 
   div.rest {
