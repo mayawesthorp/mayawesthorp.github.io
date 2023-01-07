@@ -61,8 +61,6 @@ p{
 /*PORTFOLIO*/
 .main2{
   margin: auto;
-  margin-bottom: 30px;
-  max-width: 800px;
   font-family: 'Lora', sans-serif;
   font-size: 22px;
   padding: 10px;
@@ -81,8 +79,6 @@ p{
 /*PROJECT*/
 .main{
   margin: auto;
-  margin-bottom: 30px;
-  max-width: 800px;
   font-family: 'Lora', sans-serif;
   font-size: 22px;
   padding: 10px;
@@ -324,24 +320,12 @@ footer {
       display:grid;
   }
 
-  /*p{
-    font-size: 20px;
-  }
-
-  .main2 p{
-    font-size: 20px;
-  }
-
   .title-bar p{
     font-size: 12px;
   }
   
   .title-bar h1{
     font-size: 25px;
-  }
-
-  h2{
-    font-size: 40px;
   }
 
   .box1 h2{
@@ -352,20 +336,16 @@ footer {
     font-size: 20px;
   }
 
-  .chart{
-    width: 180;
-    height: 200;
+  div.rest {
+    left: -275px;
+    margin-left: 30px;
+    margin-right: 50px;
+    position: absolute;
   }
-*/
+}
 
-  .grid-item {
-    grid-template-columns: 10% 10%;
-    margin: auto
-  }
-
-  .grid-item > div {
-    margin: auto;
-    padding: 5px
-  }
-
+div.rest {
+  margin-left: 300px;
+  margin-right: 50px;
+  padding: 1px 16px;
 }
