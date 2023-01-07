@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "title": {
-    "text": "Chart 6: UK Male Employment Rate (%)",
+    "text": "Chart 6: UK Male Employment",
     "subtitle": ["Male employment rate (aged 16-64): %.", "Source: ONS"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
