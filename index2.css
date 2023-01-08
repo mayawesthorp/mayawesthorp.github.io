@@ -315,6 +315,14 @@ footer {
     font-size: 15px;
   }
 
+  .main2 p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 17px auto;
+    max-width:900px;
+    font-size: 15px;
+  }
+
   .main button{
       width: 300px;
       margin:100px auto ;
