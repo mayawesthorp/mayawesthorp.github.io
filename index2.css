@@ -30,6 +30,7 @@ p{
   margin: auto;
 }
 
+
 /*TITLE BAR*/
 .title-bar{
     position: relative;
@@ -311,6 +312,7 @@ footer {
     line-height: 1.5;
     margin: 17px auto;
     max-width:900px;
+    font-size: 15px;
   }
 
   .main button{
@@ -348,7 +350,7 @@ footer {
   }
 
   .box2 p{
-    font-size: 20px;
+    font-size: 15px;
   }
   
   .grid-container {

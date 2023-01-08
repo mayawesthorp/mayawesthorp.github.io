@@ -120,22 +120,6 @@
     <div class="main2">
         <h2>Homework 5</h2>
         <p>Use the ONS API to add nine different series as JSON files, using these to create nine charts.</p>
-        <!--<div style = "display: flex">
-            <div class="chart" id="Chart8"></div>
-            <div class="chart" id="Chart9"></div>
-            <div class="chart" id="Chart10"></div>
-            </div>
-            <div style = "display: flex">
-            <div class="chart" id="Chart11"></div>
-            <div class="chart" id="Chart12"></div>
-            <div class="chart" id="Chart13"></div>
-            </div>
-            <div style = "display: flex">
-            <div class="chart" id="Chart14"></div>
-            <div class="chart" id="Chart15"></div>
-            <div class="chart" id="Chart16"></div>
-            </div>-->
-
         <div class="grid-container" style = "display: grid;">
             <div class="grid-item"><div class = dashchart id = "Chart8" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart9" style = "display: block;"></div></div>
@@ -166,7 +150,7 @@
         <p><i>Hover over the country to see the country name.</i></p>
         <div class="chart" id="Chart17"></div>
         <h3>Worldwide labour participation rates</h3>
-        <p>This map displays total, male and female labour participation rates worldwide.</p>
+        <p>This map displays labour participation rates worldwide. To see these broken down by gender, hover over a country.</p>
         <div class="chart" id="Chart18"></div>
     </div>
 
@@ -192,8 +176,7 @@
         <p><i>Note that inflation is shown by the green bars, and consumption expenditure is shown by the blue line.</i></p>
         <div class="chart" id="Chart20"></div>
         <p>The charts show that the impact of deflation is dependent on its cause, as evidenced by the different effects
-            on the economies of Japan, who experienced asset prices falling, and Spain, where inflation was triggered
-            by lower production costs.</p>
+            on the Japanese and Spanish economies.</p>
     </div>
 
     <div class="break">
@@ -254,7 +237,7 @@
     let width = screen.width
     if (width > 1000){
         myChart5 = "homework3_parliaments_bar.json";
-        myChart6 = "homework3_parliaments.json";
+        myChart6 = "homework3_parliaments_line.json";
         myChart19 = "homework7_japan.json";
         myChart20 = "homework7_spain.json";
         myChart21 = "homework8_ftse100.json";
@@ -263,7 +246,7 @@
     } 
     else{
         myChart5 = "homework3_parliaments_bar_narrow.json";
-        myChart6 = "homework3_parliaments_narrow.json";
+        myChart6 = "homework3_parliaments_line_narrow.json";
         myChart19 = "homework7_japan_narrow.json";
         myChart20 = "homework7_spain_narrow.json";
         myChart21 = "homework8_ftse100_narrow.json";

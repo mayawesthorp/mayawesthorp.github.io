@@ -8,11 +8,11 @@
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"
-      },
-
-      "height": 350,
-      "width": "container",
-
+    },
+  
+    "height": 350,
+    "width": "container",
+  
     "data": { "values":[
       {
           "Country name": "India",
@@ -515,11 +515,11 @@
           "Seats": 26.12846321
       }
   ]},
-    "mark": "bar",
+    "mark": "line",
     
     "encoding": {
       "x": {"field": "Year", "type": "temporal","axis":{"grid": false}},
-      "y": {"field": "Seats", "type": "quantitative", "scale": {"domain": [0, 100]},"axis":{"grid": false}, "title":""},
+      "y": {"field": "Seats", "type": "quantitative", "scale": {"domain": [0, 50]},"axis":{"grid": false}, "title":""},
       "color": {
         "field": "Country name",
         "type": "nominal",
